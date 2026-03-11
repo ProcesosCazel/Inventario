@@ -1,0 +1,1050 @@
+[
+ {
+   "id": "I-1937",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 1,
+   "imagen": "I-1937.jpeg"
+ },
+ {
+   "id": "I-1911",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 1,
+   "imagen": "I-1911.jpeg"
+ },
+ {
+   "id": "I-1906",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 2,
+   "imagen": "I-1906.jpeg"
+ },
+ {
+   "id": "I-1905",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 2,
+   "imagen": "I-1905.jpeg"
+ },
+ {
+   "id": "I-1926",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 3,
+   "imagen": "I-1926.jpeg"
+ },
+ {
+   "id": "I-1864",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": 3,
+   "imagen": "I-1864.jpeg"
+ },
+ {
+   "id": "I-1936",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 1,
+   "imagen": "I-1936.jpeg"
+ },
+ {
+   "id": "I-1904",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 1,
+   "imagen": "I-1904.jpeg"
+ },
+ {
+   "id": "I-1884",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 2,
+   "imagen": "I-1884.jpeg"
+ },
+ {
+   "id": "I-1882",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 2,
+   "imagen": "I-1882.jpeg"
+ },
+ {
+   "id": "I-1883",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 3,
+   "imagen": "I-1883.jpeg"
+ },
+ {
+   "id": "I-1880",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C02",
+   "fila": 3,
+   "imagen": "I-1880.jpeg"
+ },
+ {
+   "id": "I-1881",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 1,
+   "imagen": "I-1881.jpeg"
+ },
+ {
+   "id": "I-1875",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 1,
+   "imagen": "I-1875.jpeg"
+ },
+ {
+   "id": "I-1859",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 2,
+   "imagen": "I-1859.jpeg"
+ },
+ {
+   "id": "I-1858",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 2,
+   "imagen": "I-1858.jpeg"
+ },
+ {
+   "id": "I-1840",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 3,
+   "imagen": "I-1840.jpeg"
+ },
+ {
+   "id": "I-1839",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 3,
+   "imagen": "I-1839.jpeg"
+ },
+ {
+   "id": "I-1834",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C03",
+   "fila": 3,
+   "imagen": "I-1834.jpeg"
+ },
+ {
+   "id": "I-1857",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 1,
+   "imagen": "I-1857.jpeg"
+ },
+ {
+   "id": "I-1846",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 1,
+   "imagen": "I-1846.jpeg"
+ },
+ {
+   "id": "I-1824",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 2,
+   "imagen": "I-1824.jpeg"
+ },
+ {
+   "id": "I-1817",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 2,
+   "imagen": "I-1817.jpeg"
+ },
+ {
+   "id": "I-1816",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 3,
+   "imagen": "I-1816.jpeg"
+ },
+ {
+   "id": "I-1812",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C04",
+   "fila": 3,
+   "imagen": "I-1812.jpeg"
+ },
+ {
+   "id": "I-1804",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 1,
+   "imagen": "I-1804.jpeg"
+ },
+ {
+   "id": "I-1803",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 1,
+   "imagen": "I-1803.jpeg"
+ },
+ {
+   "id": "I-1802",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 2,
+   "imagen": "I-1802.jpeg"
+ },
+ {
+   "id": "I-1800",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 2,
+   "imagen": "I-1800.jpeg"
+ },
+ {
+   "id": "I-1789",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 3,
+   "imagen": "I-1789.jpeg"
+ },
+ {
+   "id": "I-1720",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C05",
+   "fila": 3,
+   "imagen": "I-1720.jpeg"
+ },
+ {
+   "id": "I-1799",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 1,
+   "imagen": "I-1799.jpeg"
+ },
+ {
+   "id": "I-1798",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 1,
+   "imagen": "I-1798.jpeg"
+ },
+ {
+   "id": "I-1788",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 2,
+   "imagen": "I-1788.jpeg"
+ },
+ {
+   "id": "I-1745",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 2,
+   "imagen": "I-1745.jpeg"
+ },
+ {
+   "id": "I-1719",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 3,
+   "imagen": "I-1719.jpeg"
+ },
+ {
+   "id": "I-1718",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C06",
+   "fila": 3,
+   "imagen": "I-1718.jpeg"
+ },
+ {
+   "id": "I-1700",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C07",
+   "fila": 1,
+   "imagen": "I-1700.jpeg"
+ },
+ {
+   "id": "I-1698",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C07",
+   "fila": 1,
+   "imagen": "I-1698.jpeg"
+ },
+ {
+   "id": "I-1696",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C07",
+   "fila": 2,
+   "imagen": "I-1696.jpeg"
+ },
+ {
+   "id": "I-1695",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C07",
+   "fila": 3,
+   "imagen": "I-1695.jpeg"
+ },
+ {
+   "id": "I-1694",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C07",
+   "fila": 3,
+   "imagen": "I-1694.jpeg"
+ },
+ {
+   "id": "I-1680",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C08",
+   "fila": 1,
+   "imagen": "I-1680.jpeg"
+ },
+ {
+   "id": "I-1668",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C08",
+   "fila": 1,
+   "imagen": "I-1668.jpeg"
+ },
+ {
+   "id": "I-1693",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C08",
+   "fila": 2,
+   "imagen": "I-1693.jpeg"
+ },
+ {
+   "id": "I-1640",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C08",
+   "fila": 3,
+   "imagen": "I-1640.jpeg"
+ },
+ {
+   "id": "I-1634",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C08",
+   "fila": 3,
+   "imagen": "I-1634.jpeg"
+ },
+ {
+   "id": "I-1629",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C09",
+   "fila": 1,
+   "imagen": "I-1629.jpeg"
+ },
+ {
+   "id": "I-1907",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C09",
+   "fila": 2,
+   "imagen": "I-1907.jpeg"
+ },
+ {
+   "id": "I-1622",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C09",
+   "fila": 3,
+   "imagen": "I-1622.jpeg"
+ },
+ {
+   "id": "I-1610",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C10",
+   "fila": 1,
+   "imagen": "I-1610.jpeg"
+ },
+ {
+   "id": "I-1805",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C10",
+   "fila": 2,
+   "imagen": "I-1805.jpeg"
+ },
+ {
+   "id": "I-1697",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C10",
+   "fila": 3,
+   "imagen": "I-1697.jpeg"
+ },
+ {
+   "id": "I-1691",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C10",
+   "fila": 3,
+   "imagen": "I-1691.jpeg"
+ },
+ {
+   "id": "I-1592",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C11",
+   "fila": 1,
+   "imagen": "I-1592.jpeg"
+ },
+ {
+   "id": "I-1591",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C11",
+   "fila": 1,
+   "imagen": "I-1591.jpeg"
+ },
+ {
+   "id": "I-1553",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C11",
+   "fila": 2,
+   "imagen": "I-1553.jpeg"
+ },
+ {
+   "id": "",
+   "estado": "Obstruido",
+   "nave": 3,
+   "columna": "C11",
+   "fila": 3,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Obstruido",
+   "nave": 3,
+   "columna": "C12",
+   "fila": 1,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Obstruido",
+   "nave": 3,
+   "columna": "C12",
+   "fila": 2,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Obstruido",
+   "nave": 3,
+   "columna": "C12",
+   "fila": 3,
+   "imagen": null
+ },
+ {
+   "id": "I-1595",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C13",
+   "fila": 1,
+   "imagen": "I-1595.jpeg"
+ },
+ {
+   "id": "I-1593",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C13",
+   "fila": 1,
+   "imagen": "I-1593.jpeg"
+ },
+ {
+   "id": "I-1620",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C13",
+   "fila": 2,
+   "imagen": "I-1620.jpeg"
+ },
+ {
+   "id": "I-1598",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C13",
+   "fila": 3,
+   "imagen": "I-1598.jpeg"
+ },
+ {
+   "id": "I-1597",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C13",
+   "fila": 3,
+   "imagen": "I-1597.jpeg"
+ },
+ {
+   "id": "I-1635",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C14",
+   "fila": 1,
+   "imagen": "I-1635.jpeg"
+ },
+ {
+   "id": "I-1630",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C14",
+   "fila": 2,
+   "imagen": "I-1630.jpeg"
+ },
+ {
+   "id": "I-1623",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C14",
+   "fila": 3,
+   "imagen": "I-1623.jpeg"
+ },
+ {
+   "id": "I-1711",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 1,
+   "imagen": "I-1711.jpeg"
+ },
+ {
+   "id": "I-1707",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 1,
+   "imagen": "I-1707.jpeg"
+ },
+ {
+   "id": "I-1678",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 2,
+   "imagen": "I-1678.jpeg"
+ },
+ {
+   "id": "I-1657",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 2,
+   "imagen": "I-1657.jpeg"
+ },
+ {
+   "id": "I-1701",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 3,
+   "imagen": "I-1701.jpeg"
+ },
+ {
+   "id": "I-1666",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C15",
+   "fila": 3,
+   "imagen": "I-1666.jpeg"
+ },
+ {
+   "id": "I-1791",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 1,
+   "imagen": "I-1791.jpeg"
+ },
+ {
+   "id": "I-1790",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 1,
+   "imagen": "I-1790.jpeg"
+ },
+ {
+   "id": "I-1752",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 2,
+   "imagen": "I-1752.jpeg"
+ },
+ {
+   "id": "I-1713",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 2,
+   "imagen": "I-1713.jpeg"
+ },
+ {
+   "id": "I-1712",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 3,
+   "imagen": "I-1712.jpeg"
+ },
+ {
+   "id": "I-1703",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C16",
+   "fila": 3,
+   "imagen": "I-1703.jpeg"
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 3,
+   "columna": "C17",
+   "fila": 1,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 3,
+   "columna": "C17",
+   "fila": 2,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 3,
+   "columna": "C17",
+   "fila": 3,
+   "imagen": null
+ },
+ {
+   "id": "I-1689",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C18",
+   "fila": 1,
+   "imagen": "I-1689.jpeg"
+ },
+ {
+   "id": "I-1564",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C18",
+   "fila": 2,
+   "imagen": "I-1564.jpeg"
+ },
+ {
+   "id": "I-1472",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C18",
+   "fila": 2,
+   "imagen": "I-1472.jpeg"
+ },
+ {
+   "id": "I-1216",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C18",
+   "fila": 3,
+   "imagen": "I-1216.jpeg"
+ },
+ {
+   "id": "I-1938",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C19",
+   "fila": 1,
+   "imagen": "I-1938.jpeg"
+ },
+ {
+   "id": "I-1888",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C19",
+   "fila": 1,
+   "imagen": "I-1888.jpeg"
+ },
+ {
+   "id": "I-1641",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C19",
+   "fila": 2,
+   "imagen": "I-1641.jpeg"
+ },
+ {
+   "id": "I-1599",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C19",
+   "fila": 2,
+   "imagen": "I-1599.jpeg"
+ },
+ {
+   "id": "I-1544",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C19",
+   "fila": 3,
+   "imagen": "I-1544.jpeg"
+ },
+ {
+   "id": "I-1914",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 1,
+   "imagen": "I-1914.jpeg"
+ },
+ {
+   "id": "I-1901",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 1,
+   "imagen": "I-1901.jpeg"
+ },
+ {
+   "id": "I-1797",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 2,
+   "imagen": "I-1797.jpeg"
+ },
+ {
+   "id": "I-1501",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 2,
+   "imagen": "I-1501.jpeg"
+ },
+ {
+   "id": "I-1919",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 3,
+   "imagen": "I-1919.jpeg"
+ },
+ {
+   "id": "I-1706",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C20",
+   "fila": 3,
+   "imagen": "I-1706.jpeg"
+ },
+ {
+   "id": "I-1571",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C21",
+   "fila": 1,
+   "imagen": "I-1571.jpeg"
+ },
+ {
+   "id": "I-1552",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C21",
+   "fila": 2,
+   "imagen": "I-1552.jpeg"
+ },
+ {
+   "id": "I-1534",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C21",
+   "fila": 3,
+   "imagen": "I-1534.jpeg"
+ },
+ {
+   "id": "I-1532",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C21",
+   "fila": 3,
+   "imagen": "I-1532.jpeg"
+ },
+ {
+   "id": "I-1555",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C22",
+   "fila": 1,
+   "imagen": "I-1555.jpeg"
+ },
+ {
+   "id": "I-1528",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C22",
+   "fila": 2,
+   "imagen": "I-1528.jpeg"
+ },
+ {
+   "id": "I-1527",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C22",
+   "fila": 2,
+   "imagen": "I-1527.jpeg"
+ },
+ {
+   "id": "I-1524",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C22",
+   "fila": 3,
+   "imagen": "I-1524.jpeg"
+ },
+ {
+   "id": "I-1500",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C22",
+   "fila": 3,
+   "imagen": "I-1500.jpeg"
+ },
+ {
+   "id": "I-1499",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C23",
+   "fila": 1,
+   "imagen": "I-1499.jpeg"
+ },
+ {
+   "id": "I-1473",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C23",
+   "fila": 1,
+   "imagen": "I-1473.jpeg"
+ },
+ {
+   "id": "I-1579",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C23",
+   "fila": 2,
+   "imagen": "I-1579.jpeg"
+ },
+ {
+   "id": "I-1431",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C23",
+   "fila": 3,
+   "imagen": "I-1431.jpeg"
+ },
+ {
+   "id": "I-1850",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C24",
+   "fila": 1,
+   "imagen": "I-1850.jpeg"
+ },
+ {
+   "id": "I-1923",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C24",
+   "fila": 2,
+   "imagen": "I-1923.jpeg"
+ },
+ {
+   "id": "I-1547",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C24",
+   "fila": 3,
+   "imagen": "I-1547.jpeg"
+ },
+ {
+   "id": "I-1543",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C24",
+   "fila": 3,
+   "imagen": "I-1543.jpeg"
+ },
+ {
+   "id": "I-1692",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 1,
+   "imagen": "I-1692.jpeg"
+ },
+ {
+   "id": "I-1688",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 1,
+   "imagen": "I-1688.jpeg"
+ },
+ {
+   "id": "I-1466",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 2,
+   "imagen": "I-1466.jpeg"
+ },
+ {
+   "id": "I-1429",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 2,
+   "imagen": "I-1429.jpeg"
+ },
+ {
+   "id": "I-1467",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 3,
+   "imagen": "I-1467.jpeg"
+ },
+ {
+   "id": "I-1362",
+   "estado": "EOAT",
+   "nave": 2,
+   "columna": "C25",
+   "fila": 3,
+   "imagen": "I-1362.jpeg"
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C26",
+   "fila": 1,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C26",
+   "fila": 2,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C26",
+   "fila": 3,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C27",
+   "fila": 1,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C27",
+   "fila": 2,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C27",
+   "fila": 3,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C28",
+   "fila": 1,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C28",
+   "fila": 2,
+   "imagen": null
+ },
+ {
+   "id": "",
+   "estado": "Libre",
+   "nave": 2,
+   "columna": "C28",
+   "fila": 3,
+   "imagen": null
+ }
+]
