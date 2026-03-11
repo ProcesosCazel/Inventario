@@ -17,21 +17,21 @@
 
 # Arquitectura del proyecto:
 
-index.html
-main.js
-styles.css
-print.css
+    index.html
+    main.js
+    styles.css
+    print.css
 
-assets/
-    EOAT/
-    SFX/
-    LogoCazel.webp
-    MainIcon.svg
+    assets/
+        EOAT/
+        SFX/
+        LogoCazel.webp
+        MainIcon.svg
 
-data/
-    EOAT_data.xlsx
-    eoat_data.csv
-    eoat_data.json
+    data/
+        EOAT_data.xlsx
+        eoat_data.csv
+        eoat_data.json
 
 ### El proyecto fue desarrollado como una pagina web estática utilizando:
 
