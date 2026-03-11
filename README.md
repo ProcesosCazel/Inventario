@@ -1,10 +1,14 @@
 # Proyecto: Página Web para Inventario de Herramental de Fin de Brazo (EOAT)
 
-# Objetivo:
-    -Reducir el tiempo de búsqueda y acomodo de los fin de brazo en el almacén
-    -Reducir errores en la ubicación de los fin de brazo
+## Estado del proyecto
 
-# Funciones principales de la pagina web:
+Proyecto piloto en fase de pruebas internas.
+
+## Objetivo:
+    -Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén
+    -Reducir errores en la ubicación de los fines de brazo
+
+## Funciones principales de la página web:
     -Buscar fin de brazo y mostrar
         *Número de fin de brazo
         *Nave
@@ -15,7 +19,19 @@
     -Imprimir o descargar como PDF información pertinente
     -Buzon de quejas y sugerencias
 
-# Arquitectura del proyecto:
+## La página funciona en:
+
+- Teléfonos móviles
+- Tablets
+- Computadoras
+
+Solo requiere un navegador moderno:
+- Chrome
+- Edge
+- Firefox
+- Safari
+
+## Arquitectura del proyecto:
 
     index.html
     main.js
@@ -40,7 +56,7 @@
 - **JavaScript**
 - **JSON**
 - **GitHub Pages** (hosting)
-- **Ineligencia Artificial**
+- **Inteligencia Artificial**
 
 No requiere frameworks ni backend.
 
@@ -89,4 +105,4 @@ No requiere frameworks ni backend.
 
 ### Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.
 
-Copyright 2026 Industrias Cazel.
+### Copyright 2026 Industrias Cazel.
