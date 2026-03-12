@@ -303,4 +303,3 @@ document.addEventListener("DOMContentLoaded", () => {
   errorSound.load();
   popupSound.load();
 });
-
