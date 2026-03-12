@@ -1,0 +1,253 @@
+<!--
+Proyecto: Sistema de Inventario EOAT
+Autor:
+  Ing. José Antonio Guzmán Trujillo
+  Becario de Procesos | Industrias Cazel
+  tecnicosprocesos@cazel.mx
+  2026
+-->
+
+<!doctype html>
+<html lang="es-MX">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sistema de búsqueda de herramental fin de brazo para el almacén de Industrias Cazel"
+    />
+    <!-- Title -->
+    <title>Inventario EOAT | Cazel</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Print Sheet-->
+    <link rel="stylesheet" href="./print.css" media="print" />
+    <!-- Icon -->
+    <link rel="icon" href="./assets/MainIcon.svg" type="image/svg+xml" />
+    <!-- Theme colors (light/dark) -->
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <!-- Logo -->
+      <div id="cazel-logo-wrapper">
+        <img
+          id="cazel-logo"
+          class="logo"
+          src="./assets/LogoCazel.webp"
+          alt="Logo Industrias Cazel"
+          loading="lazy"
+        />
+      </div>
+      <!-- Title -->
+      <h1 class="site-title">
+        Inventario de Herramentales de Fin de Brazo (EOAT)
+      </h1>
+    </header>
+    <!-- Main -->
+    <main class="main-content">
+      <!-- Screen 1: Search Screen -->
+      <section id="search-screen" class="screen">
+        <h2>Buscador EOAT</h2>
+        <div class="controls-container">
+          <label for="eoat-search">Buscar:</label>
+          <input
+            type="search"
+            id="eoat-search"
+            placeholder="Ej. I-1850"
+            autocomplete="off"
+            autofocus
+          />
+          <button id="print-btn" class="btn btn--secondary" disabled>
+            <span class="icon">🖨️</span>
+            <span>Imprimir</span>
+          </button>
+        </div>
+        <span id="results-counter" aria-live="polite"> </span>
+        <div id="results-table-container">
+          <table id="results-table" class="hidden">
+            <thead>
+              <tr>
+                <th scope="col" class="column">Fin De Brazo</th>
+                <th scope="col" class="column">Nave</th>
+                <th scope="col" class="column">Columna</th>
+                <th scope="col" class="column">Fila</th>
+                <th scope="col" class="column">Info</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Screen 2: Map screen -->
+      <section id="map-screen" class="screen hidden">
+        <h2>Mapa</h2>
+        <div id="map-container"></div>
+      </section>
+      <!-- Screen 3: Inbox screen -->
+      <section id="inbox-screen" class="screen hidden">
+        <h2>Buzón</h2>
+        <p>
+          Utiliza este formulario para reportar problemas, sugerencias o
+          informar si un EOAT no aparece en el sistema.
+        </p>
+        <div id="inbox-form-container">
+          <form id="inbox-form">
+            <label for="tipo">Tipo de mensaje:</label>
+            <select id="tipo" name="Tipo" required>
+              <option value="Queja">Queja</option>
+              <option value="Sugerencia">Sugerencia</option>
+              <option value="EOAT no registrado">EOAT no registrado</option>
+            </select>
+            <label for="eoat-numero">Fin de brazo (si aplica):</label>
+            <input
+              type="text"
+              id="eoat-numero"
+              name="EOAT"
+              placeholder="Ej. I-1850"
+            />
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="Mensaje"
+              rows="4"
+              required
+              placeholder="Describe el problema o sugerencia"
+            ></textarea>
+            <button type="submit" class="btn btn--secondary">
+              <span class="icon">📧</span>
+              <span>Enviar</span>
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Screen 4: Help screen -->
+      <section id="help-screen" class="screen hidden">
+        <h2>Ayuda</h2>
+        <details>
+          <summary>¿Cómo se usa el buscador?</summary>
+          <p>
+            Escribe el número del fin de brazo (EOAT) en el campo de búsqueda.
+            Los resultados aparecerán automáticamente en la tabla. Después
+            puedes dar click en el boton de info para ver mas detalles del EOAT.
+          </p>
+        </details>
+        <details>
+          <summary>¿Qué información muestra el buscador?</summary>
+          <p>
+            El buscador muestra la ubicación del fin de brazo en el almacén.
+          </p>
+          <ul>
+            <li>
+              <strong>Nave:</strong> Nave donde usualmente se utiliza el fin de
+              brazo.
+            </li>
+            <li>
+              <strong>Columna:</strong> Columna del rack donde está almacenado.
+            </li>
+            <li>
+              <strong>Fila:</strong> Nivel del rack donde está colocado. La
+              <strong>fila 1</strong> corresponde al nivel de hasta arriba del
+              rack. Las filas continúan en orden descendente
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>
+            ¿Qué hacer si un fin de brazo no aparece en el buscador?
+          </summary>
+          <p>
+            Primero verifica que el número de molde esté escrito correctamente.
+            Por ejemplo: <strong>"I-1850"</strong>.
+          </p>
+          <p>
+            Si el EOAT no aparece en el sistema, utiliza la sección
+            <strong>Buzón</strong> para reportarlo y que pueda agregarse a la
+            base de datos.
+          </p>
+        </details>
+        <details>
+          <summary>
+            ¿Qué hacer si el fin de brazo no está en el rack indicado?
+          </summary>
+          <p>Es posible que el EOAT esté montado en una máquina.</p>
+          <p>
+            Por favor recuerda
+            <strong>colocar los fin de brazo en su lugar</strong>
+            correspondiente en el rack al terminar de utilizarlos.
+          </p>
+        </details>
+        <details>
+          <summary>¿Por qué no aparece la foto del fin de brazo?</summary>
+          <p>
+            No todos los fin de brazo cuentan con fotografía en la base de
+            datos. Las fotos se irán agregando progresivamente.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cómo usar el buzón?</summary>
+          <p>En la sección <strong>Buzón</strong> puedes enviar:</p>
+          <ul>
+            <li>Quejas</li>
+            <li>Sugerencias</li>
+            <li>Reportes de EOAT que no estén en la base de datos</li>
+          </ul>
+          <p>
+            Solo llena el formulario y presiona <strong>Enviar</strong>. El
+            mensaje será enviado al correo del área responsable.
+            <em
+              >Asegurate de configurar tu correo en tu celular para que se abra
+              automáticamente al enviar el formulario.</em
+            >
+          </p>
+        </details>
+      </section>
+      <!-- Details Popup-->
+      <section
+        id="details-popup"
+        class="popup hidden"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div id="popup-content"></div>
+        <button id="close-popup-btn" class="btn btn--secondary">
+          <span class="icon">❌</span>
+          <span>Cerrar</span>
+        </button>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <!-- Main Navigation -->
+      <nav class="navbar">
+        <button id="search-screen-btn" class="btn btn--primary">
+          <span class="icon">🔍</span>
+          <span>Buscador</span>
+        </button>
+        <button id="map-screen-btn" class="btn btn--primary">
+          <span class="icon">🗺️</span>
+          <span>Mapa</span>
+        </button>
+        <button id="inbox-screen-btn" class="btn btn--primary">
+          <span class="icon">💬</span>
+          <span>Buzón</span>
+        </button>
+        <button id="help-screen-btn" class="btn btn--primary">
+          <span class="icon">❓</span>
+          <span>Ayuda</span>
+        </button>
+      </nav>
+    </footer>
+    <!-- Scripts -->
+    <noscript class="no-js-warning">
+      <div role="alert">
+        This app requires JavaScript to function. Please enable JavaScript in
+        your browser.
+      </div>
+    </noscript>
+    <script src="main.js" defer></script>
+  </body>
+</html>
