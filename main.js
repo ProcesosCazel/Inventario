@@ -93,7 +93,7 @@ async function loadDatabase() {
    ================================================= */
 
 function showScreen(screenId) {
-  closePopup();
+  if (detailsPopup.classList.contains("hidden") === false) closePopup();
 
   screens.forEach((screen) => {
     screen.classList.add("hidden");
@@ -303,3 +303,4 @@ document.addEventListener("DOMContentLoaded", () => {
   errorSound.load();
   popupSound.load();
 });
+
