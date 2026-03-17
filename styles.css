@@ -118,6 +118,8 @@ button {
   --color-success: #2ecc71;
   --color-warning: #f39c12;
   --color-danger: #c0392b;
+
+  --navbar-height: 275px;
 }
 
 /* =================================================
@@ -255,7 +257,7 @@ textarea:focus-visible {
 }
 
 #results-table-container {
-  max-height: 400px;
+  max-height: calc(100dvh - var(--navbar-height) - 180px);
   overflow-y: auto;
   overflow-x: auto;
   border: var(--border-1);
@@ -455,10 +457,11 @@ summary {
 @media (max-width: 400px) {
   .main-content {
     padding: var(--space-2);
+    padding-bottom: 110px;
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   h2 {
@@ -495,6 +498,9 @@ summary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+
+    height: auto;
+    padding: 5px;
   }
 
   .navbar .btn {
@@ -530,9 +536,9 @@ summary {
     width: 100%;
   }
 
-  /* Tabla con scroll horizontal (clave) */
   #results-table-container {
     overflow-x: auto;
+    max-height: calc(100dvh - var(--navbar-height) - 160px);
   }
 
   #results-table th,
@@ -552,6 +558,11 @@ summary {
   #help-screen li {
     text-align: justify;
     font-size: 0.95rem;
+  }
+
+  .navbar {
+    max-width: 550px;
+    margin: auto;
   }
 }
 
