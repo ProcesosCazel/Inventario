@@ -35,6 +35,7 @@ const searchScreenBtn = document.getElementById("search-screen-btn");
 const mapScreenBtn = document.getElementById("map-screen-btn");
 const inboxScreenBtn = document.getElementById("inbox-screen-btn");
 const helpScreenBtn = document.getElementById("help-screen-btn");
+const navButtons = document.querySelectorAll(".navbar .btn");
 
 /* Buzon */
 
@@ -97,6 +98,11 @@ async function loadDatabase() {
 /* =================================================
    NAVEGACIÓN ENTRE PANTALLAS
    ================================================= */
+
+function setActiveButton(activeId) {
+  navButtons.forEach((btn) => btn.classList.remove("active"));
+  document.getElementById(activeId).classList.add("active");
+}
 
 function showScreen(screenId) {
   if (detailsPopup.classList.contains("hidden") === false) closePopup();
@@ -207,8 +213,10 @@ function openPopup(eoat) {
 }
 
 function closePopup() {
-  detailsPopup.classList.add("hidden");
-  playPopupSound();
+  if (!detailsPopup.classList.contains("hidden")) {
+    detailsPopup.classList.add("hidden");
+    playPopupSound();
+  }
 }
 
 /* =================================================
@@ -265,6 +273,13 @@ searchInput.addEventListener("input", (event) => {
   searchEOAT(event.target.value);
 });
 
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === "Search") {
+    e.preventDefault();
+    searchInput.blur();
+  }
+});
+
 closePopupBtn.addEventListener("click", closePopup);
 
 detailsPopup.addEventListener("click", (event) => {
@@ -282,21 +297,25 @@ document.addEventListener("keydown", (event) => {
 searchScreenBtn.addEventListener("click", () => {
   vibrate(30);
   showScreen("search-screen");
+  setActiveButton("search-screen-btn");
 });
 
 mapScreenBtn.addEventListener("click", () => {
   vibrate(30);
   showScreen("map-screen");
+  setActiveButton("map-screen-btn");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
   vibrate(30);
   showScreen("inbox-screen");
+  setActiveButton("inbox-screen-btn");
 });
 
 helpScreenBtn.addEventListener("click", () => {
   vibrate(30);
   showScreen("help-screen");
+  setActiveButton("help-screen-btn");
 });
 
 printBtn.addEventListener("click", () => {
@@ -312,4 +331,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadDatabase();
   errorSound.load();
   popupSound.load();
+  setActiveButton("search-screen-btn");
 });

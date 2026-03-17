@@ -7,3 +7,124 @@ Autor:
     2026
 */
 
+@media print {
+  /* =================================================
+     1. RESET
+     ================================================= */
+
+  * {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* =================================================
+     2. OCULTAR ELEMENTOS NO NECESARIOS
+     ================================================= */
+
+  .site-header,
+  .site-footer,
+  .controls-container,
+  #map-screen,
+  #inbox-screen,
+  #help-screen,
+  #details-popup,
+  #print-btn,
+  #search-screen h2 {
+    display: none !important;
+  }
+
+  /* =================================================
+     5. CONTENIDO
+     ================================================= */
+
+  #search-screen::before {
+    content: "Inventario de Herramentales EOAT - Resultados de Búsqueda";
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #search-screen {
+    display: block !important;
+  }
+
+  #results-counter {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  /* =================================================
+     6. TABLA
+     ================================================= */
+
+  #results-table-container {
+    overflow: visible !important;
+    border: none;
+  }
+
+  #results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+  }
+
+  /* Repetir encabezado de tabla en cada página */
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* Evitar cortes feos */
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* Encabezados */
+
+  #results-table th {
+    border: 1px solid #000;
+    padding: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Celdas */
+
+  #results-table td {
+    border: 1px solid #000;
+    padding: 6px;
+    text-align: center;
+  }
+
+  /* Primera columna destacada */
+
+  #results-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /* =================================================
+     7. OCULTAR INFO
+     ================================================= */
+
+  .info-btn {
+    display: none !important;
+  }
+
+  #results-table th:last-child,
+  #results-table td:last-child {
+    display: none !important;
+  }
+
+  /* =================================================
+     9. CONFIGURACIÓN DE PÁGINA
+     ================================================= */
+
+  @page {
+    margin: 20mm 15mm;
+  }
+}
