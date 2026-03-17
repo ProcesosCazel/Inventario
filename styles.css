@@ -25,13 +25,18 @@ html {
 body {
   margin: 0;
   font-family:
+    "Inter",
     system-ui,
     -apple-system,
+    "Segoe UI",
+    Roboto,
     Arial,
     sans-serif;
   line-height: 1.5;
   background-color: var(--color-bg);
   color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -120,6 +125,11 @@ button {
   --color-warning: #f39c12;
   --color-danger: #c0392b;
 
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
   --navbar-height: 300px;
 }
 
@@ -133,10 +143,14 @@ button {
   gap: var(--space-3);
 
   background: var(--color-surface);
-  padding: var(--space-3);
+  padding: var(--space-2);
   border-bottom: var(--border-1);
 
   box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
 .site-title {
@@ -149,6 +163,18 @@ button {
 .main-content {
   padding: var(--space-4);
   padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  animation: fadeIn var(--transition-slow);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =================================================
@@ -158,11 +184,18 @@ button {
 #cazel-logo-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  transition: transform var(--transition-base);
+}
+
+#cazel-logo-wrapper:hover {
+  transform: scale(1.05);
 }
 
 .logo {
   max-height: 40px;
   width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 /* =================================================
@@ -171,6 +204,18 @@ button {
 
 .screen {
   display: block;
+  animation: slideIn var(--transition-base);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* =================================================
@@ -189,6 +234,24 @@ button {
   font-size: var(--fs-400);
   border-radius: var(--radius);
   border: var(--border-1);
+  background: var(--color-surface);
+  transition: all var(--transition-base);
+}
+
+#eoat-search:hover {
+  border-color: var(--color-accent-light);
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+#eoat-search:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.15);
+  outline: none;
+}
+
+#eoat-search::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.6;
 }
 
 /* =================================================
@@ -223,6 +286,8 @@ button {
 
 .btn:disabled {
   opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
 }
 
 button:focus-visible,
@@ -284,6 +349,13 @@ textarea:focus-visible {
    9. FORMULARIO BUZON
    ================================================= */
 
+#inbox-form-container {
+  background: var(--color-surface);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 #inbox-form {
   display: flex;
   flex-direction: column;
@@ -298,6 +370,20 @@ textarea:focus-visible {
   border: var(--border-1);
   font-size: var(--fs-400);
   background: var(--color-surface);
+}
+
+#inbox-form input:hover,
+#inbox-form textarea:hover,
+#inbox-form select:hover {
+  border-color: var(--color-accent-light);
+}
+
+#inbox-form input:focus,
+#inbox-form textarea:focus,
+#inbox-form select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
+  outline: none;
 }
 
 /* =================================================
@@ -323,12 +409,22 @@ textarea:focus-visible {
   inset: 0;
 
   display: flex;
-  flex-direction: column; /* 🔥 clave */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  animation: fadeInBg var(--transition-base);
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Caja del contenido */
@@ -346,14 +442,25 @@ textarea:focus-visible {
   text-align: center;
   box-shadow: var(--shadow-lg);
 
-  animation: popupIn 0.25s ease-out;
+  animation: popupIn var(--transition-slow);
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 /* Botón abajo */
 
 #close-popup-btn {
-  margin-top: var(--space-4); /* separación del contenido */
-  align-self: center; /* centrado horizontal */
+  margin-top: var(--space-4);
+  align-self: center;
 
   min-width: 140px;
 }
@@ -363,19 +470,6 @@ textarea:focus-visible {
 .eoat-image {
   margin: var(--space-3) auto;
   max-height: 200px;
-}
-
-/* Animación */
-
-@keyframes popupIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 /* Ocultar */
@@ -396,6 +490,7 @@ textarea:focus-visible {
   border-top: var(--border-1);
   box-shadow: var(--shadow-sm);
   padding-bottom: env(safe-area-inset-bottom);
+  z-index: 100;
 }
 
 .navbar {
@@ -431,8 +526,16 @@ textarea:focus-visible {
    13. AYUDA
    ================================================= */
 
+#help-screen {
+  background: var(--color-surface);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 details {
   margin-bottom: var(--space-3);
+  transition: all var(--transition-base);
 }
 
 summary {
@@ -460,6 +563,7 @@ summary {
     padding: var(--space-2);
     max-width: 480px;
     margin: auto;
+    margin-bottom: 50px;
   }
 
   h1 {
@@ -519,6 +623,7 @@ summary {
     padding: var(--space-3);
     max-width: 640px;
     margin: auto;
+    margin-bottom: 40px;
   }
 
   h1 {
@@ -577,6 +682,7 @@ summary {
   .main-content {
     max-width: 770px;
     margin: auto;
+    margin-bottom: 30px;
   }
 
   .controls-container {
