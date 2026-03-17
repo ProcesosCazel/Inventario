@@ -19,6 +19,7 @@ Autor:
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -447,6 +448,117 @@ summary {
    14. MEDIA QUERIES (TABLET / DESKTOP)
    ================================================= */
 
+/* =========================================
+   📱 EXTRA SMALL (≤400px)
+   ========================================= */
+
+@media (max-width: 400px) {
+  .main-content {
+    padding: var(--space-2);
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  /* Input más usable */
+  #eoat-search {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  /* Tabla compacta */
+  #results-table th,
+  #results-table td {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  /* Botón info más grande (touch-friendly) */
+  .info-btn {
+    font-size: 1rem;
+    padding: 4px 6px;
+  }
+
+  /* Popup */
+  #popup-content {
+    width: 98%;
+    padding: var(--space-3);
+  }
+
+  /* Navbar en grid (evita que se corte) */
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .navbar .btn {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+}
+
+/* =========================================
+   📱 SMALL (≤550px)
+   ========================================= */
+
+@media (max-width: 550px) {
+  .main-content {
+    padding: var(--space-3);
+  }
+
+  h1 {
+    font-size: var(--fs-700);
+  }
+
+  h2 {
+    font-size: var(--fs-600);
+  }
+
+  /* Controles en columna */
+  .controls-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #eoat-search {
+    width: 100%;
+  }
+
+  /* Tabla con scroll horizontal (clave) */
+  #results-table-container {
+    overflow-x: auto;
+  }
+
+  #results-table th,
+  #results-table td {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  /* Popup */
+  #popup-content {
+    width: 95%;
+    padding: var(--space-4);
+  }
+
+  /* Texto ayuda */
+  #help-screen p,
+  #help-screen li {
+    text-align: justify;
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================
+   📱 TABLET (≥768px)
+   ========================================= */
+
 @media (min-width: 768px) {
   .main-content {
     max-width: 800px;
@@ -468,29 +580,19 @@ summary {
   }
 }
 
-@media (max-width: 480px) {
-  .main-content {
-    padding: var(--space-3);
-  }
+/* =========================================
+   💻 DESKTOP (≥1024px)
+   ========================================= */
 
-  h2 {
-    font-size: var(--fs-600);
+@media (min-width: 1024px) {
+  .main-content {
+    max-width: 1000px;
   }
 
   #results-table th,
   #results-table td {
-    padding: 6px;
-    font-size: 0.8rem;
-  }
-
-  #popup-content {
-    width: 95%;
-    padding: var(--space-4);
-  }
-  #help-screen p,
-  #help-screen li {
-    text-align: justify;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    padding: 8px;
   }
 }
 
@@ -504,6 +606,10 @@ summary {
     --color-text-muted: #aaaaaa;
 
     --color-border: #333333;
+  }
+
+  #cazel-logo-wrapper {
+    filter: invert(1) grayscale(100%) brightness(150%);
   }
 }
 
