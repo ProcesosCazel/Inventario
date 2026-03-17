@@ -51,9 +51,9 @@ Autor:
     <main class="main-content">
       <!-- Screen 1: Search Screen -->
       <section id="search-screen" class="screen">
-        <h2>Buscador EOAT</h2>
+        <h2>Buscador</h2>
         <div class="controls-container">
-          <label for="eoat-search">Buscar:</label>
+          <label for="eoat-search">Buscar fin de brazo:</label>
           <input
             type="search"
             id="eoat-search"
@@ -63,7 +63,7 @@ Autor:
           />
           <button id="print-btn" class="btn btn--secondary" disabled>
             <span class="icon">🖨️</span>
-            <span>Imprimir</span>
+            <span><strong>Imprimir</strong></span>
           </button>
         </div>
         <span id="results-counter" aria-live="polite"> </span>
@@ -85,14 +85,21 @@ Autor:
       <!-- Screen 2: Map screen -->
       <section id="map-screen" class="screen hidden">
         <h2>Mapa</h2>
-        <div id="map-container"></div>
+        <div id="map-container">
+          <img
+            id="map-image"
+            src="./assets/MapaAlmacen.jpeg"
+            alt="Mapa del almacén de EOAT en Industrias Cazel"
+            loading="eager"
+          />
+        </div>
       </section>
       <!-- Screen 3: Inbox screen -->
       <section id="inbox-screen" class="screen hidden">
         <h2>Buzón</h2>
         <p>
           Utiliza este formulario para reportar problemas, sugerencias o
-          informar si un EOAT no aparece en el sistema.
+          informar si un fin de brazo (EOAT) no aparece en el sistema.
         </p>
         <div id="inbox-form-container">
           <form id="inbox-form">
@@ -118,7 +125,7 @@ Autor:
             ></textarea>
             <button type="submit" class="btn btn--secondary">
               <span class="icon">📧</span>
-              <span>Enviar</span>
+              <span><strong>Enviar</strong></span>
             </button>
           </form>
         </div>
@@ -129,9 +136,10 @@ Autor:
         <details>
           <summary>¿Cómo se usa el buscador?</summary>
           <p>
-            Escribe el número del fin de brazo (EOAT) en el campo de búsqueda.
-            Los resultados aparecerán automáticamente en la tabla. Después
-            puedes dar click en el boton de info para ver mas detalles del EOAT.
+            Escribe el número del fin de brazo (EOAT) en el campo de búsqueda
+            (por ejemplo, "I-1850"). Los resultados aparecerán automáticamente
+            en la tabla. Después, puedes dar click en el boton de info para ver
+            mas detalles del fin de brazo.
           </p>
         </details>
         <details>
@@ -149,8 +157,9 @@ Autor:
             </li>
             <li>
               <strong>Fila:</strong> Nivel del rack donde está colocado. La
-              <strong>fila 1</strong> corresponde al nivel de hasta arriba del
-              rack. Las filas continúan en orden descendente
+              <strong>fila 1</strong> corresponde al nivel de hasta
+              <strong>arriba</strong> del rack. Las filas continúan en orden
+              descendente
             </li>
           </ul>
         </details>
@@ -197,12 +206,22 @@ Autor:
           <p>
             Solo llena el formulario y presiona <strong>Enviar</strong>. El
             mensaje será enviado al correo del área responsable.
+          </p>
+          <p>
             <em
               >Asegurate de configurar tu correo en tu celular para que se abra
               automáticamente al enviar el formulario.</em
             >
           </p>
         </details>
+        <p>
+          Para mas información, contacta a
+          <strong>
+            <a href="mailto:tecnicosprocesos@cazel.mx"
+              >Ing. José Guzmán | Becario de Procesos</a
+            ></strong
+          >
+        </p>
       </section>
       <!-- Details Popup-->
       <section
@@ -214,7 +233,7 @@ Autor:
         <div id="popup-content"></div>
         <button id="close-popup-btn" class="btn btn--secondary">
           <span class="icon">❌</span>
-          <span>Cerrar</span>
+          <span><strong>Cerrar</strong></span>
         </button>
       </section>
     </main>

@@ -60,6 +60,12 @@ function playPopupSound() {
   popupSound.play().catch(() => {});
 }
 
+function vibrate(ms) {
+  if (navigator.vibrate) {
+    navigator.vibrate(ms);
+  }
+}
+
 /* =================================================
    VARIABLES GLOBALES
    ================================================= */
@@ -274,18 +280,22 @@ document.addEventListener("keydown", (event) => {
 });
 
 searchScreenBtn.addEventListener("click", () => {
+  vibrate(30);
   showScreen("search-screen");
 });
 
 mapScreenBtn.addEventListener("click", () => {
+  vibrate(30);
   showScreen("map-screen");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
+  vibrate(30);
   showScreen("inbox-screen");
 });
 
 helpScreenBtn.addEventListener("click", () => {
+  vibrate(30);
   showScreen("help-screen");
 });
 
