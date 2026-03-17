@@ -451,12 +451,68 @@ summary {
    ================================================= */
 
 /* =========================================
+   📱 SMALLER (≤480px)
+   ========================================= */
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: var(--space-2);
+    max-width: 480px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: var(--fs-500);
+  }
+
+  h2 {
+    font-size: var(--fs-400);
+  }
+
+  /* Controles en columna */
+  .controls-container {
+    gap: 5px;
+  }
+
+  #results-table-container {
+    overflow-x: auto;
+    max-height: calc(100dvh - var(--navbar-height) - 160px);
+  }
+
+  #results-table th,
+  #results-table td {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  /* Popup */
+  #popup-content {
+    width: 95%;
+    padding: var(--space-3);
+  }
+
+  /* Texto ayuda */
+  #help-screen p,
+  #help-screen li {
+    text-align: justify;
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+    max-width: 480px;
+    margin: auto;
+  }
+}
+
+/* =========================================
    📱 SMALL (≤640px)
    ========================================= */
 
 @media (max-width: 640px) {
   .main-content {
     padding: var(--space-3);
+    max-width: 640px;
+    margin: auto;
   }
 
   h1 {
