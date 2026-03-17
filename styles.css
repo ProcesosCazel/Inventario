@@ -51,6 +51,7 @@ button {
 :root {
   /* Type scale */
 
+  --fs-200: 0.75rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
   --fs-500: 1.125rem;
@@ -501,6 +502,11 @@ summary {
   .navbar {
     max-width: 480px;
     margin: auto;
+    font-size: var(--fs-300);
+  }
+
+  .nav-icon {
+    display: none;
   }
 }
 
