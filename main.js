@@ -308,26 +308,26 @@ document.addEventListener("keydown", (event) => {
 });
 
 searchScreenBtn.addEventListener("click", () => {
-  vibrate(30);
   showScreen("search-screen");
+  vibrate(200);
   setActiveButton("search-screen-btn");
 });
 
 mapScreenBtn.addEventListener("click", () => {
-  vibrate(30);
   showScreen("map-screen");
+  vibrate(200);
   setActiveButton("map-screen-btn");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
-  vibrate(30);
   showScreen("inbox-screen");
+  vibrate(200);
   setActiveButton("inbox-screen-btn");
 });
 
 helpScreenBtn.addEventListener("click", () => {
-  vibrate(30);
   showScreen("help-screen");
+  vibrate(200);
   setActiveButton("help-screen-btn");
 });
 
