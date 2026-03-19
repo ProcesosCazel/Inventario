@@ -98,6 +98,11 @@ Autor:
     font-weight: bold;
   }
 
+  #results-table td:nth-child(2) {
+    font-style: italic;
+    font-weight: normal;
+  }
+
   /* =================================================
      5. OCULTAR INFO
      ================================================= */

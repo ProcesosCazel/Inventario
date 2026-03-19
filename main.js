@@ -105,7 +105,7 @@ function setActiveButton(activeId) {
 }
 
 function showScreen(screenId) {
-  if (detailsPopup.classList.contains("hidden") === false) closePopup();
+  if (!detailsPopup.classList.contains("hidden")) closePopup();
 
   screens.forEach((screen) => {
     screen.classList.add("hidden");
@@ -152,15 +152,15 @@ function renderResults(results) {
     printBtn.disabled = true;
     return;
   }
-
   resultsCounter.textContent = `${results.length} resultado(s)`;
 
   results.forEach((eoat) => {
     const row = document.createElement("tr");
+    const naveClass = `nave-${eoat.nave}`;
 
     row.innerHTML = `
     <td>${eoat.id}</td>
-    <td>${eoat.nave}</td>
+    <td class="${naveClass}">N${eoat.nave}</td>
     <td>${eoat.columna}</td>
     <td>${eoat.fila}</td>
     <td>
@@ -188,6 +188,15 @@ function renderResults(results) {
 function openPopup(eoat) {
   const imageFile = eoat.imagen ? eoat.imagen : "no-image.svg";
   const imagePath = `./assets/EOAT/${imageFile}`;
+  const naveMap = {
+    1: { colorClass: "nave-1" },
+    2: { colorClass: "nave-2" },
+    3: { colorClass: "nave-3" },
+  };
+
+  const naveData = naveMap[eoat.nave] || {
+    colorClass: "",
+  };
 
   popupContent.innerHTML = `
     
@@ -201,7 +210,11 @@ function openPopup(eoat) {
       onerror="this.src='./assets/EOAT/no-image.svg'"
     >
 
-    <p><strong>Nave:</strong> ${eoat.nave}</p>
+    <p><strong>Nave:</strong>
+    <span class="${naveData.colorClass} no-bg">
+    N${eoat.nave}
+    </span>
+    </p>
     <p><strong>Columna:</strong> ${eoat.columna}</p>
     <p><strong>Fila:</strong> ${eoat.fila}</p>
     <p><strong>Estado:</strong> ${eoat.estado}</p>
