@@ -2152,6 +2152,14 @@
         "imagen": "I-1614.jpeg"
     },
     {
+        "id": "I-1612",
+        "estado": "EOAT",
+        "nave": 1,
+        "columna": "",
+        "fila": "",
+        "imagen": "I-1612.jpeg"
+    },
+    {
         "id": "I-1611",
         "estado": "EOAT",
         "nave": 1,
