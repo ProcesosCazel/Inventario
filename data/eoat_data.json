@@ -200,12 +200,20 @@
         "imagen": "I-1812.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1699",
+        "estado": "EOAT",
         "nave": 3,
         "columna": "C05",
         "fila": 1.0,
-        "imagen": null
+        "imagen": "I-1699.jpeg"
+    },
+    {
+        "id": "I-1565",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C05",
+        "fila": 1.0,
+        "imagen": "I-1565.jpeg"
     },
     {
         "id": "I-1802",
