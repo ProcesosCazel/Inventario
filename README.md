@@ -112,7 +112,7 @@ No requiere frameworks ni backend.
 
 #### Alternativa: 
 - Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: 
-** "Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio "". " **
+    "Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio "". "
 
 # Autor:
     Ing. José Antonio Guzmán Trujillo
