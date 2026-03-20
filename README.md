@@ -4,9 +4,14 @@
 
 Proyecto piloto en fase de pruebas internas.
 
+## Descripción
+
+Sistema web estático diseñado para facilitar la localización de herramental de fin de brazo (EOAT) dentro de los almacenes de Industrias Cazel.
+
 ## Objetivo:
     -Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén
     -Reducir errores en la ubicación de los fines de brazo
+    -Mejorar la eficiencia en cambios de fin de brazo (SMED)
 
 ## Funciones principales de la página web:
     -Buscar fin de brazo y mostrar
@@ -33,21 +38,29 @@ Solo requiere un navegador moderno:
 
 ## Arquitectura del proyecto:
 
-    index.html
-    main.js
-    styles.css
-    print.css
-
-    assets/
-        EOAT/
-        SFX/
-        LogoCazel.webp
-        MainIcon.svg
-
-    data/
-        EOAT_data.xlsx
-        eoat_data.csv
-        eoat_data.json
+    EOAT Project
+    │
+    ├── index.html
+    ├── main.js
+    ├── styles.css
+    ├── print.css
+    │
+    ├── assets/
+    │   ├── EOAT/
+    │   │   ├── no-image.svg
+    │   │   └── *Imágenes de los EOAT
+    │   ├── SFX/
+    │   │   ├── error.mp3
+    │   │   └── popup.mp3
+    │   ├── LogoCazel.webp
+    │   ├── MainIcon.svg
+    │   ├── MapaAlmacenN1.jpeg
+    │   └── MapaAlmacenN23.jpeg
+    │
+    └── data/
+        ├── EOAT_data.xlsx
+        ├── eoat_data.csv
+        └── eoat_data.json
 
 ### El proyecto fue desarrollado como una pagina web estática utilizando:
 
@@ -64,38 +77,38 @@ No requiere frameworks ni backend.
 ### Para actualizar la base de datos hay que entrar a la carpeta del proyecto "EOAT Project/data/" en el escritorio de la computadora de procesos y seguir las siguientes instrucciones:
 1. Abrir Excel maestro "EOAT_data.xlsx".
 2. Escribir en la siguiente fila libre:
-    -Número de fin de brazo (id)
-    -Estado (EOAT)
-    -Nave (1, 2 o 3)
-    -Columna (C01 - C28)
-    -Fila (1,2,3...)
-    -Imagen
+    **Número de fin de brazo (id)**
+    **Estado (EOAT)**
+    **Nave (1, 2 o 3)**
+    **Columna (C01 - C28)**
+    **Fila (1,2,3...)**
+    **Imagen**
         *Número del fin de brazo + .jpeg
         *Ejemplo: 
         "I-1850.jpeg"
 3. Guardar el archivo de Excel.
 4. Guardar como CSV UTF-8 (*.csv) con el nombre "eoat_data.csv" (sobreescribir el archivo).
 5. Buscar en internet un convertidor de csv a json.
-    -De preferencia "convertcsv.com"
+    **De preferencia "convertcsv.com"**
 6. Subir el archivo csv y convertirlo a json.
-    -Asegurarse que los valores vacíos en la columna de "imagen" se conviertan a "null".
-    -Ejemplo:
-    {
-    "id": "",
-    "estado": "Libre",
-    "nave": 2,
-    "columna": "C28",
-    "fila": 3,
-    "imagen": null
-    }
+    **Asegurarse que los valores vacíos en la columna de "imagen" se conviertan a "null".**
+    **Ejemplo:**
+        {
+        "id": "",
+        "estado": "Libre",
+        "nave": 2,
+        "columna": "C28",
+        "fila": 3,
+        "imagen": null
+        }
 7. Guardar el archivo json como "eoat_data.json" (sobreescribir el archivo).
 8. En caso de que se cuente con la foto del fin de brazo, insertarla en la carpeta "EOAT Project/assets/EOAT/" con el nombre:
-    *Número del fin de brazo + .jpeg
-    *Ejemplo: 
-    "I-1850.jpeg"
+    **Número del fin de brazo + .jpeg**
+    **Ejemplo:** 
+        "I-1850.jpeg"
 9. Actualizar en Github Pages en el repositorio "Inventario", ingresando con la cuenta de tecnicosprocesos@cazel.mx
-    -Solicitar apoyo o buscar un tutorial en internet
-    -Tambien se puede agregar manualmente sobreescribiendo directamente el archivo .json (¡NO RECOMENDADO!)
+    **Solicitar apoyo o buscar un tutorial en internet**
+    **Tambien se puede agregar manualmente sobreescribiendo directamente el archivo .json (¡NO RECOMENDADO!)**
 
 
 # Autor:
