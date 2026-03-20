@@ -116,8 +116,8 @@ No requiere frameworks ni backend.
 # Autor:
 ## Ing. José Antonio Guzmán Trujillo
 ### Becario de Procesos | Industrias Cazel
-### tecnicosprocesos@cazel.mx
+**tecnicosprocesos@cazel.mx**
 
-#### Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.
+**Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.**
 
-#### Copyright 2026 Industrias Cazel.
+**Copyright 2026 Industrias Cazel.**
