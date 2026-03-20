@@ -114,10 +114,10 @@ No requiere frameworks ni backend.
 - Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: **"Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio (""). "**
 
 # Autor:
-    Ing. José Antonio Guzmán Trujillo
-    Becario de Procesos | Industrias Cazel
-    tecnicosprocesos@cazel.mx
+## Ing. José Antonio Guzmán Trujillo
+### Becario de Procesos | Industrias Cazel
+### tecnicosprocesos@cazel.mx
 
-### Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.
+#### Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.
 
-### Copyright 2026 Industrias Cazel.
+#### Copyright 2026 Industrias Cazel.
