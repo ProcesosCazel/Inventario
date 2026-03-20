@@ -121,3 +121,14 @@ No requiere frameworks ni backend.
 **Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.**
 
 **Copyright 2026 Industrias Cazel.**
+
+# Links:
+### AI Tools 
+- https://chatgpt.com/
+- https://copilot.microsoft.com/
+### Github Repo
+- https://github.com/ProcesosCazel/Inventario
+### Github Pages
+- https://procesoscazel.github.io/Inventario/
+### CSV to JSON converter
+- https://www.convertcsv.com/csv-to-json.htm
