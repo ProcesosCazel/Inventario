@@ -36,6 +36,7 @@ const mapScreenBtn = document.getElementById("map-screen-btn");
 const inboxScreenBtn = document.getElementById("inbox-screen-btn");
 const helpScreenBtn = document.getElementById("help-screen-btn");
 const navButtons = document.querySelectorAll(".navbar .btn");
+const navbar = document.querySelector(".navbar");
 
 /* Buzon */
 
@@ -104,6 +105,14 @@ function setActiveButton(activeId) {
   document.getElementById(activeId).classList.add("active");
 }
 
+function forceNavbarRepaint() {
+  if (!navbar) return;
+
+  navbar.style.transform = "translateZ(0)";
+  navbar.offsetHeight;
+  navbar.style.transform = "";
+}
+
 function showScreen(screenId) {
   if (!detailsPopup.classList.contains("hidden")) closePopup();
 
@@ -117,7 +126,13 @@ function showScreen(screenId) {
 
   targetScreen.classList.remove("hidden");
 
-  window.scrollTo(0, 0);
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+
+    setTimeout(() => {
+      forceNavbarRepaint();
+    }, 50);
+  });
 }
 
 /* =================================================
@@ -314,25 +329,25 @@ document.addEventListener("keydown", (event) => {
 
 searchScreenBtn.addEventListener("click", () => {
   showScreen("search-screen");
-  vibrate(100);
+  vibrate(75);
   setActiveButton("search-screen-btn");
 });
 
 mapScreenBtn.addEventListener("click", () => {
   showScreen("map-screen");
-  vibrate(100);
+  vibrate(75);
   setActiveButton("map-screen-btn");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
   showScreen("inbox-screen");
-  vibrate(100);
+  vibrate(75);
   setActiveButton("inbox-screen-btn");
 });
 
 helpScreenBtn.addEventListener("click", () => {
   showScreen("help-screen");
-  vibrate(100);
+  vibrate(75);
   setActiveButton("help-screen-btn");
 });
 
