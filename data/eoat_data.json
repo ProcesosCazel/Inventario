@@ -412,15 +412,15 @@
         "estado": "EOAT",
         "nave": 3,
         "columna": "C10",
-        "fila": "2",
+        "fila": "2 y 3",
         "imagen": "I-1805.jpeg"
     },
     {
         "id": "I-1691",
-        "estado": "EOAT",
+        "estado": "Base para fin de brazo en Maq. 316",
         "nave": 3,
         "columna": "C10",
-        "fila": "3",
+        "fila": "2 y 3",
         "imagen": "I-1691.jpeg"
     },
     {
@@ -1008,12 +1008,12 @@
         "imagen": null
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1908",
+        "estado": "EOAT",
         "nave": 2,
         "columna": "C27",
         "fila": "3",
-        "imagen": null
+        "imagen": "I-1908.jpeg"
     },
     {
         "id": "Libre",

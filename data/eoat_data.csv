@@ -50,8 +50,8 @@ I-1629,EOAT,3,C09,1,I-1629.jpeg
 I-1907,EOAT,3,C09,2,I-1907.jpeg
 I-1622,EOAT,3,C09,3,I-1622.jpeg
 I-1610,EOAT,3,C10,1,I-1610.jpeg
-I-1805,EOAT,3,C10,2,I-1805.jpeg
-I-1691,EOAT,3,C10,3,I-1691.jpeg
+I-1805,EOAT,3,C10,2 y 3,I-1805.jpeg
+I-1691,Base para fin de brazo en Maq. 316,3,C10,2 y 3,I-1691.jpeg
 I-1592,EOAT,3,C11,1,I-1592.jpeg
 I-1591,EOAT,3,C11,1,I-1591.jpeg
 I-1553,EOAT,3,C11,2,I-1553.jpeg
@@ -125,7 +125,7 @@ Libre,Libre,2,C26,2,
 Libre,Libre,2,C26,3,
 Libre,Libre,2,C27,1,
 Libre,Libre,2,C27,2,
-Libre,Libre,2,C27,3,
+I-1908,EOAT,2,C27,3,I-1908.jpeg
 Libre,Libre,2,C28,1,
 Libre,Libre,2,C28,2,
 Libre,Libre,2,C28,3,
