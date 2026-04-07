@@ -392,16 +392,20 @@ textarea:focus-visible {
   text-transform: uppercase;
 }
 
-#results-table tr:hover {
-  background: var(--color-surface-muted);
-}
-
 #results-table tbody tr:nth-child(even) {
   background: var(--color-surface-muted);
 }
 
 #results-table td:first-child {
   font-weight: 600;
+}
+
+#results-table tbody tr:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 116, 217, 0.08) 0%,
+    rgba(0, 116, 217, 0.15) 100%
+  );
 }
 
 /* =================================================
