@@ -112,7 +112,12 @@ function showScreen(screenId) {
   });
 
   const targetScreen = document.getElementById(screenId);
+
+  if (!targetScreen) return;
+
   targetScreen.classList.remove("hidden");
+
+  window.scrollTo(0, 0);
 }
 
 /* =================================================
