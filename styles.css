@@ -457,7 +457,8 @@ textarea:focus-visible {
   box-shadow: var(--shadow);
 }
 
-#map-image {
+#map-image-N1,
+#map-image-N23 {
   width: 100%;
   margin-bottom: var(--space-2);
   margin-top: var(--space-2);

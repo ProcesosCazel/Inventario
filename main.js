@@ -217,7 +217,7 @@ function openPopup(eoat) {
     </p>
     <p><strong>Columna:</strong> ${eoat.columna}</p>
     <p><strong>Fila:</strong> ${eoat.fila}</p>
-    <p><strong>Estado:</strong> ${eoat.estado}</p>
+    <p><strong>Estado:</strong> ${eoat.estado || "No especificado"}</p>
 
   `;
 
@@ -258,7 +258,7 @@ if (inboxForm) {
 
     body += `\nMensaje:\n${mensaje}`;
 
-    const fecha = new Date().toLocaleString();
+    const fecha = new Date().toLocaleString("es-MX");
 
     body += `\n\nFecha: ${fecha}`;
     body += `\nDispositivo: ${navigator.userAgent}`;
@@ -309,25 +309,25 @@ document.addEventListener("keydown", (event) => {
 
 searchScreenBtn.addEventListener("click", () => {
   showScreen("search-screen");
-  vibrate(200);
+  vibrate(100);
   setActiveButton("search-screen-btn");
 });
 
 mapScreenBtn.addEventListener("click", () => {
   showScreen("map-screen");
-  vibrate(200);
+  vibrate(100);
   setActiveButton("map-screen-btn");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
   showScreen("inbox-screen");
-  vibrate(200);
+  vibrate(100);
   setActiveButton("inbox-screen-btn");
 });
 
 helpScreenBtn.addEventListener("click", () => {
   showScreen("help-screen");
-  vibrate(200);
+  vibrate(100);
   setActiveButton("help-screen-btn");
 });
 

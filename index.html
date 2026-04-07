@@ -39,7 +39,7 @@ Autor:
           class="logo"
           src="./assets/LogoCazel.webp"
           alt="Logo Industrias Cazel"
-          loading="lazy"
+          loading="eager"
         />
       </div>
       <!-- Title -->
@@ -60,6 +60,7 @@ Autor:
             placeholder="Ej. I-1850"
             autocomplete="off"
             autofocus
+            spellcheck="false"
           />
           <button id="print-btn" class="btn btn--secondary" disabled>
             <span class="icon">🖨️</span>
@@ -87,19 +88,23 @@ Autor:
         <h2>Mapa</h2>
         <div id="map-container">
           <img
-            id="map-image"
+            id="map-image-N1"
             src="./assets/MapaAlmacenN1.jpeg"
             alt="Mapa del almacén de EOAT Nave 1 en Industrias Cazel"
             loading="eager"
           />
-          <caption>🔴 Mapa del almacén de EOAT Nave 1 en Industrias Cazel</caption>
+          <figcaption>
+            🔴 Mapa del almacén de EOAT Nave 1 en Industrias Cazel
+          </figcaption>
           <img
-            id="map-image"
+            id="map-image-N23"
             src="./assets/MapaAlmacenN23.jpeg"
             alt="Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel"
             loading="eager"
           />
-          <caption>🔵 🟢 Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel</caption>
+          <figcaption>
+            🔵 🟢 Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel
+          </figcaption>
         </div>
       </section>
       <!-- Screen 3: Inbox screen -->
@@ -123,6 +128,8 @@ Autor:
               id="eoat-numero"
               name="EOAT"
               placeholder="Ej. I-1850"
+              autocomplete="off"
+              spellcheck="false"
             />
             <label for="mensaje">Mensaje:</label>
             <textarea
@@ -167,7 +174,7 @@ Autor:
               <strong>Fila:</strong> Nivel del rack donde está colocado. La
               <strong>fila 1</strong> corresponde al nivel de hasta
               <strong>arriba</strong> del rack. Las filas continúan en orden
-              descendente
+              descendente.
             </li>
           </ul>
         </details>
@@ -217,13 +224,13 @@ Autor:
           </p>
           <p>
             <em
-              >*Asegurate de configurar tu correo en tu celular para que se abra
+              >*Asegúrate de configurar tu correo en tu celular para que se abra
               automáticamente al enviar el formulario.</em
             >
           </p>
         </details>
         <p>
-          Para mas información, contacta a
+          Para más información, contacta a
           <strong>
             <a href="mailto:tecnicosprocesos@cazel.mx"
               >Ing. José Guzmán | Becario de Procesos</a
@@ -270,8 +277,8 @@ Autor:
     <!-- Scripts -->
     <noscript class="no-js-warning">
       <div role="alert">
-        This app requires JavaScript to function. Please enable JavaScript in
-        your browser.
+        Esta aplicación requiere JavaScript para funcionar. Por favor,
+        habilítalo en tu navegador.
       </div>
     </noscript>
     <script src="main.js" defer></script>
