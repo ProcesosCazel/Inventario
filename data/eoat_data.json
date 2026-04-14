@@ -216,27 +216,11 @@
         "imagen": "I-1565.jpeg"
     },
     {
-        "id": "I-1802",
-        "estado": "EOAT",
-        "nave": 3,
-        "columna": "C05",
-        "fila": "2",
-        "imagen": "I-1802.jpeg"
-    },
-    {
-        "id": "I-1800",
-        "estado": "EOAT",
-        "nave": 3,
-        "columna": "C05",
-        "fila": "2",
-        "imagen": "I-1800.jpeg"
-    },
-    {
         "id": "I-1789",
         "estado": "EOAT",
         "nave": 3,
         "columna": "C05",
-        "fila": "3",
+        "fila": "2",
         "imagen": "I-1789.jpeg"
     },
     {
