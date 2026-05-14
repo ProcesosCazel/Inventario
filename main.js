@@ -329,25 +329,25 @@ document.addEventListener("keydown", (event) => {
 
 searchScreenBtn.addEventListener("click", () => {
   showScreen("search-screen");
-  vibrate(65);
+  vibrate(75);
   setActiveButton("search-screen-btn");
 });
 
 mapScreenBtn.addEventListener("click", () => {
   showScreen("map-screen");
-  vibrate(65);
+  vibrate(75);
   setActiveButton("map-screen-btn");
 });
 
 inboxScreenBtn.addEventListener("click", () => {
   showScreen("inbox-screen");
-  vibrate(65);
+  vibrate(75);
   setActiveButton("inbox-screen-btn");
 });
 
 helpScreenBtn.addEventListener("click", () => {
   showScreen("help-screen");
-  vibrate(65);
+  vibrate(75);
   setActiveButton("help-screen-btn");
 });
 

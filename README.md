@@ -8,6 +8,10 @@ Proyecto piloto en fase de pruebas internas.
 
 Sistema web estático diseñado para facilitar la localización de herramental de fin de brazo (EOAT) dentro de los almacenes de Industrias Cazel.
 
+# Vista general
+
+![Imagen Buscador](./assets/README/Screenshot1.png)
+
 ## Objetivo:
 - Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén
 - Reducir errores en la ubicación de los fines de brazo
@@ -19,10 +23,15 @@ Sistema web estático diseñado para facilitar la localización de herramental d
     - Nave
     - Columna
     - Fila
-    - Foto (opcional)
+    - Foto (WIP)
 - Mostrar un mapa o diagrama del acomodo de los racks en el almacén
+    - Nave 1
+    - Nave 2 y 3
 - Imprimir o descargar como PDF información pertinente
-- Buzon de quejas y sugerencias
+- Buzon digital
+    - Quejas
+    - Sugerencias
+    - EOAT no registrado
 
 ## La página funciona en:
 
@@ -30,13 +39,17 @@ Sistema web estático diseñado para facilitar la localización de herramental d
 - Tablets
 - Computadoras
 
-Solo requiere un navegador moderno:
-- Chrome
-- Edge
-- Firefox
+Solo requiere un navegador moderno y acceso a internet:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 - Safari
 
-## Arquitectura del proyecto:
+## Código QR
+
+![Código QR](./QR%20code/qr-code.svg)
+
+# Arquitectura del proyecto:
 
     EOAT Project
     │
@@ -48,7 +61,7 @@ Solo requiere un navegador moderno:
     ├── assets/
     │   ├── EOAT/
     │   │   ├── no-image.svg
-    │   │   └── *Imágenes de los EOAT
+    │   │   └── *Imágenes de los EOAT*
     │   ├── SFX/
     │   │   ├── error.mp3
     │   │   └── popup.mp3
@@ -59,76 +72,70 @@ Solo requiere un navegador moderno:
     │
     └── data/
         ├── EOAT_data.xlsx
+        ├── json_converter.py
         ├── eoat_data.csv
         └── eoat_data.json
 
-### El proyecto fue desarrollado como una pagina web estática utilizando:
+## El proyecto fue desarrollado como una pagina web estática utilizando:
 
 - **HTML**
 - **CSS**
 - **JavaScript**
 - **JSON**
+- **Python**
 - **GitHub Pages** (hosting)
-- **Inteligencia Artificial**
+- **AI Chatbots**
 
 No requiere frameworks ni backend.
 
 # Actualización de Base de Datos:
-### Para actualizar la base de datos hay que entrar a la carpeta del proyecto "EOAT Project/data/" en el escritorio de la computadora de procesos y seguir las siguientes instrucciones:
-1. Abrir Excel maestro "EOAT_data.xlsx".
-2. Escribir en la siguiente fila libre:
-    - Número de fin de brazo (id)
-    - Estado (EOAT)
-    - Nave (1, 2 o 3)
-    - Columna (C01 - C28)
-    - Fila (1,2,3...)
-    - Imagen
-        - Número del fin de brazo + .jpeg
-        - Ejemplo: 
-            - "I-1850.jpeg"
-3. Guardar el archivo de Excel.
-4. Guardar como CSV UTF-8 (*.csv) con el nombre "eoat_data.csv" (sobreescribir el archivo).
-5. Buscar en internet un convertidor de csv a json.
-    - De preferencia "convertcsv.com"
-6. Subir el archivo csv y convertirlo a json.
-    - Asegurarse que los valores vacíos en la columna de "imagen" se conviertan a "null".
-    - Ejemplo:
-        {
-        "id": "",
-        "estado": "Libre",
-        "nave": 2,
-        "columna": "C28",
-        "fila": 3,
-        "imagen": null
-        }
-7. Guardar el archivo json como "eoat_data.json" (sobreescribir el archivo).
-8. En caso de que se cuente con la foto del fin de brazo, insertarla en la carpeta "EOAT Project/assets/EOAT/" con el nombre:
-    - Número del fin de brazo + .jpeg
-    - Ejemplo: 
-        - "I-1850.jpeg"
-9. Actualizar en Github Pages en el repositorio "Inventario", ingresando con la cuenta de tecnicosprocesos@cazel.mx
-    - Solicitar apoyo o buscar un tutorial en internet
-    - Tambien se puede agregar manualmente sobreescribiendo directamente el archivo .json (¡NO RECOMENDADO!)
+## Usando el script de python
+- Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
 
-#### Alternativa: 
+{
+   "id": "I-1937",
+   "estado": "EOAT",
+   "nave": 3,
+   "columna": "C01",
+   "fila": "1",
+   "imagen": "I-1937.jpeg"
+},
+
+## Alternativa: 
 - Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: **"Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio (""). "**
 
-# Autor:
+# Links y recursos:
+## AI Chatbots 
+- https://chatgpt.com/
+- https://copilot.microsoft.com/
+## Github Repo
+- https://github.com/ProcesosCazel/Inventario
+## Github Pages
+- https://procesoscazel.github.io/Inventario/
+## Descargar Python
+- https://www.python.org/downloads/
+### Dependencias necesarias:
+- pandas
+- openpyxl
+#### Para instalarlas copia y pega el codigo en la terminal de la computadora:
+- **pip install pandas openpyxl**
+
+# Propuestas de mejora futuras
+- Historial de movimientos (entradas y salidas de EOAT)
+- Registro de mantenimientos preventivos y correctivos
+- Estadísticas de uso y KPI's
+- Applicacion offline (PWA)
+
+# Autores:
+## Ing. Hector Uriel Ramirez Sandoval
+### Auxiliar de robot | Industrias Cazel
+**uramirez@cazel.mx**
+--
 ## Ing. José Antonio Guzmán Trujillo
 ### Becario de Procesos | Industrias Cazel
 **tecnicosprocesos@cazel.mx**
+--
 
 **Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.**
 
 **Copyright 2026 Industrias Cazel.**
-
-# Links:
-### AI Tools 
-- https://chatgpt.com/
-- https://copilot.microsoft.com/
-### Github Repo
-- https://github.com/ProcesosCazel/Inventario
-### Github Pages
-- https://procesoscazel.github.io/Inventario/
-### CSV to JSON converter
-- https://www.convertcsv.com/csv-to-json.htm
