@@ -1,4 +1,4 @@
-# Proyecto: Página Web para Inventario de Herramental de Fin de Brazo (EOAT)
+# Proyecto: Sistema de Inventario Digital para Herramental de Fin de Brazo (EOAT)
 
 ## Estado del proyecto
 
