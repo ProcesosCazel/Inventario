@@ -118,7 +118,7 @@ No requiere frameworks ni backend.
 - pandas
 - openpyxl
 #### Para instalarlas copia y pega el codigo en la terminal de la computadora:
-**pip install pandas openpyxl**
+    "pip install pandas openpyxl"
 
 # Propuestas de mejora futuras
 - Historial de movimientos (entradas y salidas de EOAT)
