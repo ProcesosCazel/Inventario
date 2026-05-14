@@ -91,8 +91,7 @@ No requiere frameworks ni backend.
 # Actualización de Base de Datos:
 ## Usando el script de python
 - Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
-
-eoat_data.json
+### Estructura eoat_data.json
     {
         "id": "I-1937",
         "estado": "EOAT",
@@ -119,7 +118,7 @@ eoat_data.json
 - pandas
 - openpyxl
 #### Para instalarlas copia y pega el codigo en la terminal de la computadora:
-    "pip install pandas openpyxl"
+    pip install pandas openpyxl
 
 # Propuestas de mejora futuras
 - Historial de movimientos (entradas y salidas de EOAT)
