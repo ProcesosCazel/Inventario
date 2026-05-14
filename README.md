@@ -92,6 +92,7 @@ No requiere frameworks ni backend.
 ## Usando el script de python
 - Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
 
+eoat_data.json
     {
         "id": "I-1937",
         "estado": "EOAT",
