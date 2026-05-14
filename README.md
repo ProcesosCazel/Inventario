@@ -98,6 +98,8 @@ Solo requiere un navegador moderno y acceso a internet:
 
 No requiere frameworks ni backend.
 
+![Lenguajes de programación](./assets/README/Languges.png)
+
 # Actualización de Base de Datos:
 ## Usando el script de python
 - Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
