@@ -92,14 +92,14 @@ No requiere frameworks ni backend.
 ## Usando el script de python
 - Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
 
-{
+    {
    "id": "I-1937",
    "estado": "EOAT",
    "nave": 3,
    "columna": "C01",
    "fila": "1",
    "imagen": "I-1937.jpeg"
-},
+    },
 
 ## Alternativa: 
 - Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: **"Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio (""). "**
@@ -118,7 +118,7 @@ No requiere frameworks ni backend.
 - pandas
 - openpyxl
 #### Para instalarlas copia y pega el codigo en la terminal de la computadora:
-- **pip install pandas openpyxl**
+**pip install pandas openpyxl**
 
 # Propuestas de mejora futuras
 - Historial de movimientos (entradas y salidas de EOAT)
@@ -127,11 +127,11 @@ No requiere frameworks ni backend.
 - Applicacion offline (PWA)
 
 # Autores:
-## Ing. Hector Uriel Ramirez Sandoval
+## 1. Ing. Hector Uriel Ramirez Sandoval
 ### Auxiliar de robot | Industrias Cazel
 **uramirez@cazel.mx**
 --
-## Ing. José Antonio Guzmán Trujillo
+## 2. Ing. José Antonio Guzmán Trujillo
 ### Becario de Procesos | Industrias Cazel
 **tecnicosprocesos@cazel.mx**
 --
