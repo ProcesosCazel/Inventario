@@ -23,7 +23,7 @@ Sistema web estático diseñado para facilitar la localización de herramental d
     - Nave
     - Columna
     - Fila
-    - Foto (WIP)
+    - Foto
 - Mostrar un mapa o diagrama del acomodo de los racks en el almacén
     - Nave 1
     - Nave 2 y 3
@@ -76,15 +76,19 @@ Solo requiere un navegador moderno y acceso a internet:
         ├── eoat_data.csv
         └── eoat_data.json
 
-## El proyecto fue desarrollado como una pagina web estática utilizando:
+## Tecnologías Utilizadas
 
+### Página Web
 - **HTML**
 - **CSS**
 - **JavaScript**
+### Base de datos
 - **JSON**
 - **Python**
+### Publicación
 - **GitHub Pages** (hosting)
-- **AI Chatbots**
+### Desarrollo y debugging
+- **Herramientas de Inteligencia Artificial**
 
 No requiere frameworks ni backend.
 
