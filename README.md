@@ -13,9 +13,12 @@ Sistema web estático diseñado para facilitar la localización de herramental d
 ![Imagen Buscador](./assets/README/Screenshot1.png)
 
 ## Objetivo:
-- Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén
-- Reducir errores en la ubicación de los fines de brazo
-- Mejorar la eficiencia en cambios de fin de brazo (SMED)
+- Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén.
+- Reducir errores en la ubicación de los fines de brazo.
+- Mejorar la eficiencia en cambios de fin de brazo.
+- Fomentar iniciativas de lean manufacturing:
+    - SMED
+    - 5S
 
 ## Funciones principales de la página web:
 - Buscar fin de brazo y mostrar
@@ -28,7 +31,7 @@ Sistema web estático diseñado para facilitar la localización de herramental d
     - Nave 1
     - Nave 2 y 3
 - Imprimir o descargar como PDF información pertinente
-- Buzon digital
+- Buzón digital
     - Quejas
     - Sugerencias
     - EOAT no registrado
@@ -83,11 +86,14 @@ Solo requiere un navegador moderno y acceso a internet:
 - **CSS**
 - **JavaScript**
 ### Base de datos
+- **MS Excel**
 - **JSON**
 - **Python**
 ### Publicación
+- **Github Repo** (almacenamiento)
 - **GitHub Pages** (hosting)
 ### Desarrollo y debugging
+- **VS Code**
 - **Herramientas de Inteligencia Artificial**
 
 No requiere frameworks ni backend.
@@ -105,7 +111,7 @@ No requiere frameworks ni backend.
         "imagen": "I-1937.jpeg"
     },
 
-## Alternativa: 
+## Conversión alternativa utilizando IA
 - Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: **"Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio (""). "**
 
 # Links y recursos:
@@ -127,8 +133,8 @@ No requiere frameworks ni backend.
 # Propuestas de mejora futuras
 - Historial de movimientos (entradas y salidas de EOAT)
 - Registro de mantenimientos preventivos y correctivos
-- Estadísticas de uso y KPI's
-- Applicacion offline (PWA)
+- Estadísticas de uso y KPIs
+- Aplicación offline (PWA)
 
 # Autores:
 ## 1. Ing. Hector Uriel Ramirez Sandoval
