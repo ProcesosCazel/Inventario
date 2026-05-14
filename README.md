@@ -10,7 +10,7 @@ Sistema web estático diseñado para facilitar la localización de herramental d
 
 # Vista general
 
-![Imagen Buscador](/assets/README/Screenshot1.png)
+![Imagen Buscador](./assets/README/Screenshot1.png)
 
 ## Objetivo:
 - Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén
