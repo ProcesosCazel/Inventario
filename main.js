@@ -13,7 +13,7 @@ Autor:
    REFERENCIAS DEL DOM (UI ELEMENTS)
    ================================================= */
 
-/* Buscador */
+// Buscador
 
 const searchInput = document.getElementById("eoat-search");
 const resultsTable = document.getElementById("results-table");
@@ -21,13 +21,13 @@ const resultsCounter = document.getElementById("results-counter");
 const resultsTableBody = document.querySelector("#results-table tbody");
 const printBtn = document.getElementById("print-btn");
 
-/* Popup */
+// Popup
 
 const detailsPopup = document.getElementById("details-popup");
 const popupContent = document.getElementById("popup-content");
 const closePopupBtn = document.getElementById("close-popup-btn");
 
-/* Pantallas */
+// Pantallas
 
 const screens = document.querySelectorAll(".screen");
 
@@ -38,15 +38,15 @@ const helpScreenBtn = document.getElementById("help-screen-btn");
 const navButtons = document.querySelectorAll(".navbar .btn");
 const navbar = document.querySelector(".navbar");
 
-/* Buzon */
+// Buzon
 
 const inboxForm = document.getElementById("inbox-form");
-const tipoSelect = document.getElementById("tipo");
+const typeSelect = document.getElementById("tipo");
 const eoatInput = document.getElementById("eoat-numero");
-const mensajeInput = document.getElementById("mensaje");
+const messageInput = document.getElementById("mensaje");
 
 /* =================================================
-   SISTEMA DE SFX
+   Sonido (SFX)
    ================================================= */
 
 const errorSound = new Audio("./assets/SFX/error.mp3");
@@ -77,7 +77,7 @@ function vibrate(ms) {
 let eoatDatabase = [];
 
 /* =================================================
-   CARGAR BASE DE DATOS
+   CARGAR BASE DE DATOS (json)
    ================================================= */
 
 async function loadDatabase() {
@@ -260,9 +260,9 @@ if (inboxForm) {
   inboxForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const tipo = tipoSelect.value;
+    const tipo = typeSelect.value;
     const eoat = eoatInput.value.trim();
-    const mensaje = mensajeInput.value.trim();
+    const mensaje = messageInput.value.trim();
 
     if (!mensaje) {
       playErrorSound();
@@ -295,8 +295,6 @@ if (inboxForm) {
 eoatInput.addEventListener("input", () => {
   eoatInput.value = eoatInput.value.toUpperCase();
 });
-
-/* --- ESTO VA AL FINAL DEL SCRIPT --- */
 
 /* =================================================
    EVENT LISTENERS

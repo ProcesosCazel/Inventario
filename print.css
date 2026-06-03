@@ -68,7 +68,7 @@ Autor:
     display: table-header-group;
   }
 
-  /* Evitar cortes feos */
+  /* Evitar cortes de lineas */
 
   tr {
     page-break-inside: avoid;
@@ -104,7 +104,7 @@ Autor:
   }
 
   /* =================================================
-     5. OCULTAR INFO
+     5. OCULTAR BOTÓN DE INFO
      ================================================= */
 
   .info-btn {
