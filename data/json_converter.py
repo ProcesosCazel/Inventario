@@ -25,7 +25,7 @@ import json
 import math
 
 # =========================================================
-# CONFIGURACIÓN
+# ARCHIVOS
 # =========================================================
 
 EXCEL_FILE = "EOAT_data.xlsx"
