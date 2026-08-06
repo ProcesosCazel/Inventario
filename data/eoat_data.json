@@ -1,7 +1,7 @@
 [
     {
         "id": "I-1937",
-        "estado": "EOAT",
+        "estado": "3 dedos, 2 pinzas",
         "nave": 3,
         "columna": "C01",
         "fila": "1",
@@ -9,7 +9,7 @@
     },
     {
         "id": "I-1911",
-        "estado": "EOAT",
+        "estado": "18 pinzas",
         "nave": 3,
         "columna": "C01",
         "fila": "1",
@@ -25,7 +25,7 @@
     },
     {
         "id": "I-1905",
-        "estado": "EOAT",
+        "estado": "8 ventosas, 4 dedos",
         "nave": 3,
         "columna": "C01",
         "fila": "2",
@@ -33,7 +33,7 @@
     },
     {
         "id": "I-1926",
-        "estado": "EOAT",
+        "estado": "4 ventosas",
         "nave": 3,
         "columna": "C01",
         "fila": "3",
@@ -57,7 +57,7 @@
     },
     {
         "id": "I-1904",
-        "estado": "EOAT",
+        "estado": "8 ventosas, 7 dedos, 4 pinzas",
         "nave": 3,
         "columna": "C02",
         "fila": "1",
@@ -65,7 +65,7 @@
     },
     {
         "id": "I-1884",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 dedos",
         "nave": 3,
         "columna": "C02",
         "fila": "2",
@@ -73,7 +73,7 @@
     },
     {
         "id": "I-1882",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 3 dedos",
         "nave": 3,
         "columna": "C02",
         "fila": "2",
@@ -81,7 +81,7 @@
     },
     {
         "id": "I-1883",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 2 dedos, 1 pinza",
         "nave": 3,
         "columna": "C02",
         "fila": "3",
@@ -97,7 +97,7 @@
     },
     {
         "id": "I-1881",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 2 dedos, 1 pinza",
         "nave": 3,
         "columna": "C03",
         "fila": "1",
@@ -105,7 +105,7 @@
     },
     {
         "id": "I-1875",
-        "estado": "EOAT",
+        "estado": "9 ventosas, 6 pinzas, 6 dedos",
         "nave": 3,
         "columna": "C03",
         "fila": "1",
@@ -121,7 +121,7 @@
     },
     {
         "id": "I-1858",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 dedos, 5 pinzas",
         "nave": 3,
         "columna": "C03",
         "fila": "2",
@@ -129,7 +129,7 @@
     },
     {
         "id": "I-1840",
-        "estado": "EOAT",
+        "estado": "4 ventosas",
         "nave": 3,
         "columna": "C03",
         "fila": "3",
@@ -137,7 +137,7 @@
     },
     {
         "id": "I-1839",
-        "estado": "EOAT",
+        "estado": "3 pinzas",
         "nave": 3,
         "columna": "C03",
         "fila": "3",
@@ -145,7 +145,7 @@
     },
     {
         "id": "I-1834",
-        "estado": "EOAT",
+        "estado": "3 ventosas, 2 dedos",
         "nave": 3,
         "columna": "C03",
         "fila": "3",
@@ -153,7 +153,7 @@
     },
     {
         "id": "I-1857",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 dedos, 6 pinzas",
         "nave": 3,
         "columna": "C04",
         "fila": "1",
@@ -161,7 +161,7 @@
     },
     {
         "id": "I-1846",
-        "estado": "EOAT",
+        "estado": "4 dedos",
         "nave": 3,
         "columna": "C04",
         "fila": "1",
@@ -225,7 +225,7 @@
     },
     {
         "id": "I-1720",
-        "estado": "EOAT",
+        "estado": "1 ventosa, 4 pinzas",
         "nave": 3,
         "columna": "C05",
         "fila": "3",
@@ -265,7 +265,7 @@
     },
     {
         "id": "I-1719",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 dedo, 3 pinzas",
         "nave": 3,
         "columna": "C06",
         "fila": "3",
@@ -273,7 +273,7 @@
     },
     {
         "id": "I-1718",
-        "estado": "EOAT",
+        "estado": "2 dedos, 4 pinzas",
         "nave": 3,
         "columna": "C06",
         "fila": "3",
@@ -329,7 +329,7 @@
     },
     {
         "id": "I-1668",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas",
         "nave": 3,
         "columna": "C08",
         "fila": "1",
@@ -345,7 +345,7 @@
     },
     {
         "id": "I-1640",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 3 pinzas",
         "nave": 3,
         "columna": "C08",
         "fila": "3",
@@ -353,7 +353,7 @@
     },
     {
         "id": "I-1634",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 6 pinzas",
         "nave": 3,
         "columna": "C08",
         "fila": "3",
@@ -512,12 +512,12 @@
         "imagen": "I-1472.jpeg"
     },
     {
-        "id": "I-1216",
-        "estado": "EOAT",
+        "id": "Libre",
+        "estado": "Libre",
         "nave": 3,
         "columna": "C18",
         "fila": "3",
-        "imagen": "I-1216.jpeg"
+        "imagen": null
     },
     {
         "id": "I-1938",
@@ -657,7 +657,7 @@
     },
     {
         "id": "I-1635",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 6 pinzas",
         "nave": 2,
         "columna": "C14",
         "fila": "1",
@@ -681,7 +681,7 @@
     },
     {
         "id": "I-1711",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 2,
         "columna": "C15",
         "fila": "1",
@@ -689,7 +689,7 @@
     },
     {
         "id": "I-1707",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 2,
         "columna": "C15",
         "fila": "1",
@@ -697,7 +697,7 @@
     },
     {
         "id": "I-1678",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 2,
         "columna": "C15",
         "fila": "2",
@@ -705,7 +705,7 @@
     },
     {
         "id": "I-1657",
-        "estado": "EOAT",
+        "estado": "4 ventosas",
         "nave": 2,
         "columna": "C15",
         "fila": "2",
@@ -721,7 +721,7 @@
     },
     {
         "id": "I-1666",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 2,
         "columna": "C15",
         "fila": "3",
@@ -745,7 +745,7 @@
     },
     {
         "id": "I-1752",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 4 pinzas",
         "nave": 2,
         "columna": "C16",
         "fila": "2",
@@ -761,7 +761,7 @@
     },
     {
         "id": "I-1712",
-        "estado": "EOAT",
+        "estado": "4 ventosas",
         "nave": 2,
         "columna": "C16",
         "fila": "3",
@@ -881,7 +881,7 @@
     },
     {
         "id": "I-1850",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 2,
         "columna": "C24",
         "fila": "1",
@@ -1049,7 +1049,7 @@
     },
     {
         "id": "I-1924",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C01",
         "fila": "2",
@@ -1057,7 +1057,7 @@
     },
     {
         "id": "I-1922",
-        "estado": "EOAT",
+        "estado": "15 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C01",
         "fila": "2",
@@ -1065,7 +1065,7 @@
     },
     {
         "id": "I-1921",
-        "estado": "EOAT",
+        "estado": "15 ventosas, 4 pinzas",
         "nave": 1,
         "columna": "C01",
         "fila": "2",
@@ -1073,7 +1073,7 @@
     },
     {
         "id": "I-1928",
-        "estado": "EOAT",
+        "estado": "8 dedos, 4 pinzas",
         "nave": 1,
         "columna": "C01",
         "fila": "3",
@@ -1089,7 +1089,7 @@
     },
     {
         "id": "I-1935",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 dedos",
         "nave": 1,
         "columna": "C01",
         "fila": "4",
@@ -1105,7 +1105,7 @@
     },
     {
         "id": "I-1933",
-        "estado": "EOAT",
+        "estado": "8 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C01",
         "fila": "4",
@@ -1113,7 +1113,7 @@
     },
     {
         "id": "I-1898",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C01",
         "fila": "4",
@@ -1129,7 +1129,7 @@
     },
     {
         "id": "I-1894",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 4 dedos, 1 pinza",
         "nave": 1,
         "columna": "C02",
         "fila": "1",
@@ -1153,7 +1153,7 @@
     },
     {
         "id": "I-1897",
-        "estado": "EOAT",
+        "estado": "6 pinzas",
         "nave": 1,
         "columna": "C02",
         "fila": "2",
@@ -1161,7 +1161,7 @@
     },
     {
         "id": "I-1895",
-        "estado": "EOAT",
+        "estado": "12 ventosas",
         "nave": 1,
         "columna": "C02",
         "fila": "2",
@@ -1169,7 +1169,7 @@
     },
     {
         "id": "I-1900",
-        "estado": "EOAT",
+        "estado": "2 pinzas de corte, 3 pinzas",
         "nave": 1,
         "columna": "C02",
         "fila": "3",
@@ -1185,7 +1185,7 @@
     },
     {
         "id": "I-1912",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C02",
         "fila": "4",
@@ -1209,7 +1209,7 @@
     },
     {
         "id": "I-1865",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C03",
         "fila": "1",
@@ -1225,7 +1225,7 @@
     },
     {
         "id": "I-1872",
-        "estado": "EOAT",
+        "estado": "1 ventosa, 2 pinzas",
         "nave": 1,
         "columna": "C03",
         "fila": "2",
@@ -1233,7 +1233,7 @@
     },
     {
         "id": "I-1866",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C03",
         "fila": "2",
@@ -1241,7 +1241,7 @@
     },
     {
         "id": "I-1877",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C03",
         "fila": "3",
@@ -1257,7 +1257,7 @@
     },
     {
         "id": "I-1874",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 4 dedos, 1 pinza",
         "nave": 1,
         "columna": "C03",
         "fila": "3",
@@ -1265,7 +1265,7 @@
     },
     {
         "id": "I-1891",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C03",
         "fila": "4",
@@ -1273,7 +1273,7 @@
     },
     {
         "id": "I-1890",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C03",
         "fila": "4",
@@ -1281,7 +1281,7 @@
     },
     {
         "id": "I-1889",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C03",
         "fila": "4",
@@ -1297,7 +1297,7 @@
     },
     {
         "id": "I-1843",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C04",
         "fila": "1",
@@ -1313,7 +1313,7 @@
     },
     {
         "id": "I-1841",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C04",
         "fila": "1",
@@ -1329,7 +1329,7 @@
     },
     {
         "id": "I-1848",
-        "estado": "EOAT",
+        "estado": "4 ventosas",
         "nave": 1,
         "columna": "C04",
         "fila": "2",
@@ -1337,7 +1337,7 @@
     },
     {
         "id": "I-1847",
-        "estado": "EOAT",
+        "estado": "3 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C04",
         "fila": "2",
@@ -1345,7 +1345,7 @@
     },
     {
         "id": "I-1851",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C04",
         "fila": "3",
@@ -1361,7 +1361,7 @@
     },
     {
         "id": "I-1845",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C04",
         "fila": "3",
@@ -1377,7 +1377,7 @@
     },
     {
         "id": "I-1854",
-        "estado": "EOAT",
+        "estado": "2 ventosas",
         "nave": 1,
         "columna": "C04",
         "fila": "4",
@@ -1385,7 +1385,7 @@
     },
     {
         "id": "I-1853",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C04",
         "fila": "4",
@@ -1401,7 +1401,7 @@
     },
     {
         "id": "I-1787",
-        "estado": "EOAT",
+        "estado": "2 ventosas",
         "nave": 1,
         "columna": "C05",
         "fila": "1",
@@ -1409,7 +1409,7 @@
     },
     {
         "id": "I-1786",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C05",
         "fila": "1",
@@ -1433,7 +1433,7 @@
     },
     {
         "id": "I-1813",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C05",
         "fila": "2",
@@ -1441,7 +1441,7 @@
     },
     {
         "id": "I-1823",
-        "estado": "EOAT",
+        "estado": "4 pinzas",
         "nave": 1,
         "columna": "C05",
         "fila": "3",
@@ -1449,7 +1449,7 @@
     },
     {
         "id": "I-1822",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C05",
         "fila": "3",
@@ -1457,7 +1457,7 @@
     },
     {
         "id": "I-1819",
-        "estado": "EOAT",
+        "estado": "1 ventosa, 2 pinzas",
         "nave": 1,
         "columna": "C05",
         "fila": "3",
@@ -1465,7 +1465,7 @@
     },
     {
         "id": "I-1818",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C05",
         "fila": "3",
@@ -1473,7 +1473,7 @@
     },
     {
         "id": "I-1830",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C05",
         "fila": "4",
@@ -1489,7 +1489,7 @@
     },
     {
         "id": "I-1827",
-        "estado": "EOAT",
+        "estado": "4 dedos, 2 pinzas",
         "nave": 1,
         "columna": "C05",
         "fila": "4",
@@ -1497,7 +1497,7 @@
     },
     {
         "id": "I-1777",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C06",
         "fila": "1",
@@ -1505,7 +1505,7 @@
     },
     {
         "id": "I-1776",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C06",
         "fila": "1",
@@ -1513,7 +1513,7 @@
     },
     {
         "id": "I-1775",
-        "estado": "EOAT",
+        "estado": "6 pinzas",
         "nave": 1,
         "columna": "C06",
         "fila": "1",
@@ -1561,7 +1561,7 @@
     },
     {
         "id": "I-1783",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C06",
         "fila": "3",
@@ -1585,7 +1585,7 @@
     },
     {
         "id": "I-1735",
-        "estado": "EOAT",
+        "estado": "1 pinza",
         "nave": 1,
         "columna": "C07",
         "fila": "1",
@@ -1593,7 +1593,7 @@
     },
     {
         "id": "I-1734",
-        "estado": "EOAT",
+        "estado": "1 pinza",
         "nave": 1,
         "columna": "C07",
         "fila": "1",
@@ -1617,7 +1617,7 @@
     },
     {
         "id": "I-1766",
-        "estado": "EOAT",
+        "estado": "6 ventosas",
         "nave": 1,
         "columna": "C07",
         "fila": "2",
@@ -1625,7 +1625,7 @@
     },
     {
         "id": "I-1751",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C07",
         "fila": "2",
@@ -1633,7 +1633,7 @@
     },
     {
         "id": "I-1773",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 dedos, 2 pinzas",
         "nave": 1,
         "columna": "C07",
         "fila": "3 y 4",
@@ -1641,7 +1641,7 @@
     },
     {
         "id": "I-1772",
-        "estado": "EOAT",
+        "estado": "2 dedos, 6 pinzas",
         "nave": 1,
         "columna": "C07",
         "fila": "3 y 4",
@@ -1649,7 +1649,7 @@
     },
     {
         "id": "I-1771",
-        "estado": "EOAT",
+        "estado": "2 dedos, 7 pinzas",
         "nave": 1,
         "columna": "C07",
         "fila": "3 y 4",
@@ -1657,7 +1657,7 @@
     },
     {
         "id": "I-1716",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "1",
@@ -1665,7 +1665,7 @@
     },
     {
         "id": "I-1715",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "1",
@@ -1673,7 +1673,7 @@
     },
     {
         "id": "I-1710",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C08",
         "fila": "1",
@@ -1681,7 +1681,7 @@
     },
     {
         "id": "I-1722",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 dedos, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "2",
@@ -1689,7 +1689,7 @@
     },
     {
         "id": "I-1721",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "2",
@@ -1697,7 +1697,7 @@
     },
     {
         "id": "I-1717",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "2",
@@ -1705,7 +1705,7 @@
     },
     {
         "id": "I-1729",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "3",
@@ -1713,7 +1713,7 @@
     },
     {
         "id": "I-1728",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "3",
@@ -1721,7 +1721,7 @@
     },
     {
         "id": "I-1725",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "3",
@@ -1729,7 +1729,7 @@
     },
     {
         "id": "I-1732",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C08",
         "fila": "4",
@@ -1737,7 +1737,7 @@
     },
     {
         "id": "I-1731",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C08",
         "fila": "4",
@@ -1745,7 +1745,7 @@
     },
     {
         "id": "I-1730",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C08",
         "fila": "4",
@@ -1753,7 +1753,7 @@
     },
     {
         "id": "I-1675",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "1",
@@ -1761,7 +1761,7 @@
     },
     {
         "id": "I-1674",
-        "estado": "EOAT",
+        "estado": "3 pinzas",
         "nave": 1,
         "columna": "C09",
         "fila": "1",
@@ -1769,7 +1769,7 @@
     },
     {
         "id": "I-1673",
-        "estado": "EOAT",
+        "estado": "3 pinzas",
         "nave": 1,
         "columna": "C09",
         "fila": "1",
@@ -1777,7 +1777,7 @@
     },
     {
         "id": "I-1672",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "1",
@@ -1785,7 +1785,7 @@
     },
     {
         "id": "I-1679",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "2",
@@ -1793,7 +1793,7 @@
     },
     {
         "id": "I-1677",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "2",
@@ -1817,7 +1817,7 @@
     },
     {
         "id": "I-1681",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "3",
@@ -1825,7 +1825,7 @@
     },
     {
         "id": "I-1709",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "4",
@@ -1833,7 +1833,7 @@
     },
     {
         "id": "I-1708",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C09",
         "fila": "4",
@@ -1849,7 +1849,7 @@
     },
     {
         "id": "I-1655",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "1",
@@ -1857,7 +1857,7 @@
     },
     {
         "id": "I-1654",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "1",
@@ -1865,7 +1865,7 @@
     },
     {
         "id": "I-1653",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "1",
@@ -1873,7 +1873,7 @@
     },
     {
         "id": "I-1652",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "1",
@@ -1881,7 +1881,7 @@
     },
     {
         "id": "I-1660",
-        "estado": "EOAT",
+        "estado": "2 ventosas",
         "nave": 1,
         "columna": "C10",
         "fila": "2",
@@ -1889,7 +1889,7 @@
     },
     {
         "id": "I-1659",
-        "estado": "EOAT",
+        "estado": "1 ventosa",
         "nave": 1,
         "columna": "C10",
         "fila": "2",
@@ -1897,7 +1897,7 @@
     },
     {
         "id": "I-1658",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "2",
@@ -1905,7 +1905,7 @@
     },
     {
         "id": "I-1656",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "2",
@@ -1913,7 +1913,7 @@
     },
     {
         "id": "I-1669",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "3",
@@ -1929,7 +1929,7 @@
     },
     {
         "id": "I-1665",
-        "estado": "EOAT",
+        "estado": "6 ventosas",
         "nave": 1,
         "columna": "C10",
         "fila": "3",
@@ -1937,7 +1937,7 @@
     },
     {
         "id": "I-1664",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "3",
@@ -1945,7 +1945,7 @@
     },
     {
         "id": "I-1662",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "3",
@@ -1961,7 +1961,7 @@
     },
     {
         "id": "I-1671",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "4",
@@ -1969,7 +1969,7 @@
     },
     {
         "id": "I-1670",
-        "estado": "EOAT",
+        "estado": "1 ventosa, 1 pinza",
         "nave": 1,
         "columna": "C10",
         "fila": "4",
@@ -1977,7 +1977,7 @@
     },
     {
         "id": "I-1637",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "1",
@@ -1985,7 +1985,7 @@
     },
     {
         "id": "I-1636",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "1",
@@ -1993,7 +1993,7 @@
     },
     {
         "id": "I-1633",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas, 2 dedos",
         "nave": 1,
         "columna": "C11",
         "fila": "1",
@@ -2001,7 +2001,7 @@
     },
     {
         "id": "I-1643",
-        "estado": "EOAT",
+        "estado": "3 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "2",
@@ -2009,7 +2009,7 @@
     },
     {
         "id": "I-1642",
-        "estado": "EOAT",
+        "estado": "3 pinzas",
         "nave": 1,
         "columna": "C11",
         "fila": "2",
@@ -2017,7 +2017,7 @@
     },
     {
         "id": "I-1639",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "2",
@@ -2025,7 +2025,7 @@
     },
     {
         "id": "I-1638",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 2 pinzas",
         "nave": 1,
         "columna": "C11",
         "fila": "2",
@@ -2033,7 +2033,7 @@
     },
     {
         "id": "I-1647",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "3",
@@ -2041,7 +2041,7 @@
     },
     {
         "id": "I-1646",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "3",
@@ -2049,7 +2049,7 @@
     },
     {
         "id": "I-1645",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "3",
@@ -2057,7 +2057,7 @@
     },
     {
         "id": "I-1644",
-        "estado": "EOAT",
+        "estado": "4 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "3",
@@ -2065,7 +2065,7 @@
     },
     {
         "id": "I-1651",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "4",
@@ -2073,7 +2073,7 @@
     },
     {
         "id": "I-1650",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "4",
@@ -2089,7 +2089,7 @@
     },
     {
         "id": "I-1648",
-        "estado": "EOAT",
+        "estado": "6 ventosas, 1 pinza",
         "nave": 1,
         "columna": "C11",
         "fila": "4",
@@ -2169,7 +2169,7 @@
     },
     {
         "id": "I-1632",
-        "estado": "EOAT",
+        "estado": "2 ventosas, 2 pinzas, 2 dedos",
         "nave": 1,
         "columna": "C12",
         "fila": "4",
@@ -2225,7 +2225,7 @@
     },
     {
         "id": "I-1614",
-        "estado": "EOAT",
+        "estado": "1 pinza, 1 ventosa",
         "nave": 1,
         "columna": "C13",
         "fila": "4",
@@ -2233,7 +2233,7 @@
     },
     {
         "id": "I-1612",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C13",
         "fila": "4",
@@ -2241,7 +2241,7 @@
     },
     {
         "id": "I-1611",
-        "estado": "EOAT",
+        "estado": "2 pinzas",
         "nave": 1,
         "columna": "C13",
         "fila": "4",
@@ -2281,7 +2281,7 @@
     },
     {
         "id": "I-1586",
-        "estado": "EOAT",
+        "estado": "1 pinza, 2 ventosas",
         "nave": 1,
         "columna": "C14",
         "fila": "2",
@@ -2337,7 +2337,7 @@
     },
     {
         "id": "I-1589",
-        "estado": "EOAT",
+        "estado": "2 ventosas",
         "nave": 1,
         "columna": "C14",
         "fila": "4",
@@ -2433,7 +2433,7 @@
     },
     {
         "id": "I-1558",
-        "estado": "EOAT",
+        "estado": "1 pinza",
         "nave": 1,
         "columna": "C15",
         "fila": "3",
@@ -2505,7 +2505,7 @@
     },
     {
         "id": "I-1463",
-        "estado": "EOAT",
+        "estado": "1 ventosa",
         "nave": 1,
         "columna": "C16",
         "fila": "3",
