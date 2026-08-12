@@ -1,11 +1,11 @@
 ﻿id,estado,nave,columna,fila,imagen
 I-1937,"3 dedos, 2 pinzas",3,C01,1,I-1937.jpeg
 I-1911,18 pinzas,3,C01,1,I-1911.jpeg
-I-1906,EOAT,3,C01,2,I-1906.jpeg
+I-1906,13 ventosas,3,C01,2,I-1906.jpeg
 I-1905,"8 ventosas, 4 dedos",3,C01,2,I-1905.jpeg
 I-1926,4 ventosas,3,C01,3,I-1926.jpeg
 I-1864,EOAT,3,C01,3,I-1864.jpeg
-I-1936,EOAT,3,C02,1,I-1936.jpeg
+I-1936,4 pinzas,3,C02,1,I-1936.jpeg
 I-1904,"8 ventosas, 7 dedos, 4 pinzas",3,C02,1,I-1904.jpeg
 I-1884,"2 ventosas, 2 dedos",3,C02,2,I-1884.jpeg
 I-1882,"2 ventosas, 3 dedos",3,C02,2,I-1882.jpeg
@@ -20,38 +20,36 @@ I-1839,3 pinzas,3,C03,3,I-1839.jpeg
 I-1834,"3 ventosas, 2 dedos",3,C03,3,I-1834.jpeg
 I-1857,"4 ventosas, 2 dedos, 6 pinzas",3,C04,1,I-1857.jpeg
 I-1846,4 dedos,3,C04,1,I-1846.jpeg
-I-1824,EOAT,3,C04,2,I-1824.jpeg
+I-1824,4 pinzas,3,C04,2,I-1824.jpeg
 I-1817,"4 ventosas, 2 dedos, 3 pinzas",3,C04,2,I-1817.jpeg
-I-1816,EOAT,3,C04,3,I-1816.jpeg
-I-1812,EOAT,3,C04,3,I-1812.jpeg
-I-1699,EOAT,3,C05,1,I-1699.jpeg
-I-1565,EOAT,3,C05,1,I-1565.jpeg
-I-1789,EOAT,3,C05,2,I-1789.jpeg
+I-1816,"3 pinzas, 2 ventosas",3,C04,3,I-1816.jpeg
+I-1812,"4 ventosas, 3 pinzas",3,C04,3,I-1812.jpeg
+I-1699,"3 pinzas, 1 dedo",3,C05,1,I-1699.jpeg
+I-1789,"4 ventosas, 2 pinzas",3,C05,2,I-1789.jpeg
 I-1720,"1 ventosa, 4 pinzas",3,C05,3,I-1720.jpeg
-I-1799,EOAT,3,C06,1,I-1799.jpeg
-I-1798,EOAT,3,C06,1,I-1798.jpeg
-I-1788,EOAT,3,C06,2,I-1788.jpeg
-I-1745,EOAT,3,C06,2,I-1745.jpeg
+Libre,Libre,3,C06,1,
+I-1788,"6 pinzas, 4 ventosas",3,C06,2,I-1788.jpeg
+I-1745,"10 pinzas de goma, 8 pinzas, 2 dedos",3,C06,2,I-1745.jpeg
 I-1719,"2 ventosas, 1 dedo, 3 pinzas",3,C06,3,I-1719.jpeg
 I-1718,"2 dedos, 4 pinzas",3,C06,3,I-1718.jpeg
-I-1700,EOAT,3,C07,1,I-1700.jpeg
+I-1700,"2 dedos, 4 pinzas",3,C07,1,I-1700.jpeg
 I-1698,EOAT,3,C07,1,I-1698.jpeg
-I-1696,EOAT,3,C07,2,I-1696.jpeg
+I-1696,"2 ventosas, 5 dedos, 8 pinzas",3,C07,2,I-1696.jpeg
 I-1695,EOAT,3,C07,3,I-1695.jpeg
-I-1694,EOAT,3,C07,3,I-1694.jpeg
+I-1694,"10 pinzas, 2 ventosas",3,C07,3,I-1694.jpeg
 I-1680,"2 ventosas, 3 pinzas",3,C08,1,I-1680.jpeg
 I-1668,"2 ventosas, 2 pinzas",3,C08,1,I-1668.jpeg
-I-1693,EOAT,3,C08,2,I-1693.jpeg
+I-1693,"7 dedos, 4 pinzas",3,C08,2,I-1693.jpeg
 I-1640,"4 ventosas, 3 pinzas",3,C08,3,I-1640.jpeg
 I-1634,"4 ventosas, 6 pinzas",3,C08,3,I-1634.jpeg
 I-1629,EOAT,3,C09,1,I-1629.jpeg
-I-1907,EOAT,3,C09,2,I-1907.jpeg
+I-1907,"6 ventosas, 4 dedos, 6 pinzas",3,C09,2,I-1907.jpeg
 I-1622,EOAT,3,C09,3,I-1622.jpeg
-I-1610,EOAT,3,C10,1,I-1610.jpeg
+I-1610,4 dedos,3,C10,1,I-1610.jpeg
 I-1805,EOAT,3,C10,2 y 3,I-1805.jpeg
 I-1691,Base para fin de brazo en Maq. 316,3,C10,2 y 3,I-1691.jpeg
-I-1592,EOAT,3,C11,1,I-1592.jpeg
-I-1591,EOAT,3,C11,1,I-1591.jpeg
+I-1592,"5 ventosas con pistones, 1 dedo",3,C11,1,I-1592.jpeg
+I-1591,4 ventosas,3,C11,1,I-1591.jpeg
 I-1553,EOAT,3,C11,2,I-1553.jpeg
 Obstruido,Obstruido,3,C11,3,
 Obstruido,Obstruido,3,C12,1,
@@ -64,57 +62,54 @@ I-1689,EOAT,3,C18,1,I-1689.jpeg
 I-1564,EOAT,3,C18,2,I-1564.jpeg
 I-1472,EOAT,3,C18,2,I-1472.jpeg
 Libre,Libre,3,C18,3,
-I-1938,EOAT,3,C19,1,I-1938.jpeg
+I-1938,"7 dedos, 2 ventosas",3,C19,1,I-1938.jpeg
 I-1888,EOAT,3,C19,1,I-1888.jpeg
 I-1641,"4 ventosas, 4 pinzas",3,C19,2,I-1641.jpeg
-I-1599,EOAT,3,C19,2,I-1599.jpeg
+I-1599,4 ventosas con pistones,3,C19,2,I-1599.jpeg
 I-1544,EOAT,3,C19,3,I-1544.jpeg
-I-1914,EOAT,3,C20,1,I-1914.jpeg
-I-1901,EOAT,3,C20,1,I-1901.jpeg
-I-1797,EOAT,3,C20,2,I-1797.jpeg
+I-1914,"8 pistones pinza, 8 pinzas",3,C20,1,I-1914.jpeg
+I-1901,4 ventosas,3,C20,1,I-1901.jpeg
 I-1501,EOAT,3,C20,2,I-1501.jpeg
 I-1919,EOAT,3,C20,3,I-1919.jpeg
 I-1706,EOAT,3,C20,3,I-1706.jpeg
-I-1595,EOAT,2,C13,1,I-1595.jpeg
 I-1593,EOAT,2,C13,1,I-1593.jpeg
 Libre,Libre,2,C13,2,
-I-1598,EOAT,2,C13,3,I-1598.jpeg
-I-1597,EOAT,2,C13,3,I-1597.jpeg
+I-1598,"2 ventosas, 1 pinza",2,C13,3,I-1598.jpeg
+I-1597,4 pistones,2,C13,3,I-1597.jpeg
 I-1945,EOAT,2,C14,1,I-1945.jpeg
 I-1635,"4 ventosas, 6 pinzas",2,C14,1,I-1635.jpeg
-I-1630,EOAT,2,C14,2,I-1630.jpeg
-I-1623,EOAT,2,C14,3,I-1623.jpeg
+I-1630,"4 ventosas, 2 dedos",2,C14,2,I-1630.jpeg
+I-1623,"2 ventosas, 4 pinzas",2,C14,3,I-1623.jpeg
 I-1711,"4 ventosas, 2 pinzas",2,C15,1,I-1711.jpeg
 I-1707,"4 ventosas, 2 pinzas",2,C15,1,I-1707.jpeg
 I-1678,2 pinzas,2,C15,2,I-1678.jpeg
 I-1657,4 ventosas,2,C15,2,I-1657.jpeg
-I-1701,EOAT,2,C15,3,I-1701.jpeg
+I-1701,"5 dedos, 2 pinzas",2,C15,3,I-1701.jpeg
 I-1666,"4 ventosas, 1 pinza",2,C15,3,I-1666.jpeg
 I-1791,EOAT,2,C16,1,I-1791.jpeg
 I-1790,EOAT,2,C16,1,I-1790.jpeg
 I-1752,"2 ventosas, 4 pinzas",2,C16,2,I-1752.jpeg
 I-1713,"4 ventosas, 2 pinzas",2,C16,2,I-1713.jpeg
 I-1712,4 ventosas,2,C16,3,I-1712.jpeg
-I-1703,EOAT,2,C16,3,I-1703.jpeg
-I-1571,EOAT,2,C21,1,I-1571.jpeg
-I-1552,EOAT,2,C21,2,I-1552.jpeg
-I-1534,EOAT,2,C21,3,I-1534.jpeg
+I-1703,"4 pinzas, 2 dedos",2,C16,3,I-1703.jpeg
+Libre,Libre,2,C21,1,
+I-1552,"6 dedos, 2 pinzas, 2 pernos guías",2,C21,2,I-1552.jpeg
+I-1534,"5 pinzas, 2 dedos",2,C21,3,I-1534.jpeg
 I-1532,EOAT,2,C21,3,I-1532.jpeg
-I-1555,EOAT,2,C22,1,I-1555.jpeg
-I-1528,EOAT,2,C22,2,I-1528.jpeg
-I-1527,EOAT,2,C22,2,I-1527.jpeg
-I-1524,EOAT,2,C22,3,I-1524.jpeg
-I-1500,EOAT,2,C22,3,I-1500.jpeg
-I-1499,EOAT,2,C23,1,I-1499.jpeg
+I-1555,"4 ventosas, 2 dedos",2,C22,1,I-1555.jpeg
+I-1528,"2 dedos GFR20, 3 dedos de abrazadera ancha, 2 ventosas",2,C22,2,I-1528.jpeg
+I-1527,4 dedos,2,C22,2,I-1527.jpeg
+I-1524,"2 ventosas, 1 pinza",2,C22,3,I-1524.jpeg
+I-1500,6 dedos,2,C22,3,I-1500.jpeg
+I-1499,"4 dedos, 2 pinzas",2,C23,1,I-1499.jpeg
 I-1579,EOAT,2,C23,2,I-1579.jpeg
-I-1473,EOAT,2,C23,3,I-1473.jpeg
-I-1431,EOAT,2,C23,3,I-1431.jpeg
+I-1473,2 ventosas,2,C23,3,I-1473.jpeg
+I-1431,3 ventosas,2,C23,3,I-1431.jpeg
 I-1850,"4 ventosas, 2 pinzas",2,C24,1,I-1850.jpeg
 I-1923,EOAT,2,C24,2,I-1923.jpeg
-I-1547,EOAT,2,C24,3,I-1547.jpeg
+I-1547,"4 pinzas, 2 dedos",2,C24,3,I-1547.jpeg
 I-1692,EOAT,2,C25,1,I-1692.jpeg
-I-1688,EOAT,2,C25,1,I-1688.jpeg
-I-1466,EOAT,2,C25,2,I-1466.jpeg
+I-1688,"4 dedos, 2 ventosas",2,C25,1,I-1688.jpeg
 I-1429,EOAT,2,C25,2,I-1429.jpeg
 I-1467,EOAT,2,C25,3,I-1467.jpeg
 I-1362,8 ventosas,2,C25,3,I-1362.jpeg
@@ -127,21 +122,21 @@ I-1908,EOAT,2,C27,3,I-1908.jpeg
 Libre,Libre,2,C28,1,
 Libre,Libre,2,C28,2,
 Libre,Libre,2,C28,3,
-I-1930,EOAT,1,C01,1,I-1930.jpeg
-I-1915,EOAT,1,C01,1,I-1915.jpeg
-I-1910,EOAT,1,C01,1,I-1910.jpeg
+I-1930,"4 ventosas, 2 pinzas",1,C01,1,I-1930.jpeg
+I-1915,3 pinzas,1,C01,1,I-1915.jpeg
+I-1910,12 ventosas,1,C01,1,I-1910.jpeg
 I-1924,2 pinzas,1,C01,2,I-1924.jpeg
 I-1922,"15 ventosas, 2 pinzas",1,C01,2,I-1922.jpeg
 I-1921,"15 ventosas, 4 pinzas",1,C01,2,I-1921.jpeg
 I-1928,"8 dedos, 4 pinzas",1,C01,3,I-1928.jpeg
-I-1925,EOAT,1,C01,3,I-1925.jpeg
+I-1925,2 pinzas,1,C01,3,I-1925.jpeg
 I-1935,"2 ventosas, 2 dedos",1,C01,4,I-1935.jpeg
 I-1934,4 pinzas,1,C01,4,I-1934.jpeg
 I-1933,"8 ventosas, 2 pinzas",1,C01,4,I-1933.jpeg
 I-1898,"2 ventosas, 1 pinza",1,C01,4,I-1898.jpeg
-I-1931,EOAT,1,C02,1,I-1931.jpeg
+I-1931,4 ventosas,1,C02,1,I-1931.jpeg
 I-1894,"2 ventosas, 4 dedos, 1 pinza",1,C02,1,I-1894.jpeg
-I-1893,EOAT,1,C02,1,I-1893.jpeg
+I-1893,"2 ventosas, 1 pinza",1,C02,1,I-1893.jpeg
 I-1892,EOAT,1,C02,1,I-1892.jpeg
 I-1897,6 pinzas,1,C02,2,I-1897.jpeg
 I-1895,12 ventosas,1,C02,2,I-1895.jpeg
@@ -155,7 +150,7 @@ I-1873,EOAT,1,C03,2,I-1873.jpeg
 I-1872,"1 ventosa, 2 pinzas",1,C03,2,I-1872.jpeg
 I-1866,"4 ventosas, 1 pinza",1,C03,2,I-1866.jpeg
 I-1877,"6 ventosas, 1 pinza",1,C03,3,I-1877.jpeg
-I-1876,EOAT,1,C03,3,I-1876.jpeg
+I-1876,"4 ventosas, 4 dedos, 1 pinza",1,C03,3,I-1876.jpeg
 I-1874,"2 ventosas, 4 dedos, 1 pinza",1,C03,3,I-1874.jpeg
 I-1891,"4 ventosas, 2 pinzas",1,C03,4,I-1891.jpeg
 I-1890,2 pinzas,1,C03,4,I-1890.jpeg
@@ -170,7 +165,7 @@ I-1847,"3 ventosas, 1 pinza",1,C04,2,I-1847.jpeg
 I-1851,"4 ventosas, 2 pinzas",1,C04,3,I-1851.jpeg
 I-1849,"2 ventosas, 1 pinza",1,C04,3,I-1849.jpeg
 I-1845,"2 ventosas, 1 pinza",1,C04,3,I-1845.jpeg
-I-1855,EOAT,1,C04,4,I-1855.jpeg
+I-1855,3 pinzas,1,C04,4,I-1855.jpeg
 I-1854,2 ventosas,1,C04,4,I-1854.jpeg
 I-1853,2 pinzas,1,C04,4,I-1853.jpeg
 I-1852,"2 pinzas, 2 dedos",1,C04,4,I-1852.jpeg
@@ -191,12 +186,11 @@ I-1776,"4 ventosas, 1 pinza",1,C06,1,I-1776.jpeg
 I-1775,6 pinzas,1,C06,1,I-1775.jpeg
 I-1779,"4 ventosas, 2 pinzas",1,C06,2,I-1779.jpeg
 I-1778,"4 ventosas, 2 pinzas",1,C06,2,I-1778.jpeg
-I-1774,EOAT,1,C06,2,I-1774.jpeg
 I-1785,"4 ventosas, 1 pinza",1,C06,3,I-1785.jpeg
 I-1784,"4 ventosas, 1 pinza",1,C06,3,I-1784.jpeg
 I-1783,"4 ventosas, 1 pinza",1,C06,3,I-1783.jpeg
-I-1782,"2 ventosas, 4 dedos, 2 pinzas (I-1780)",1,C06,4,I-1782.jpeg
-I-1780,"2 ventosas, 4 dedos, 2 pinzas (I-1782)",1,C06,4,I-1782.jpeg
+I-1782,"4 ventosas, 2 pinzas, 4 dedos",1,C06,4,I-1782.jpeg
+I-1780,"2 ventosas, 4 dedos, 2 pinzas",1,C06,4,I-1780.jpeg
 I-1735,1 pinza,1,C07,1,I-1735.jpeg
 I-1734,1 pinza,1,C07,1,I-1734.jpeg
 I-1733,"4 ventosas, 1 pinza",1,C07,1,I-1733.jpeg
@@ -301,7 +295,7 @@ I-1557,"2 ventosas, 1 pinza",1,C15,2,I-1557.jpeg
 I-1545,3 pinzas,1,C15,2,I-1545.jpeg
 I-1538,2 pinzas,1,C15,2,I-1538.jpeg
 I-1560,2 ventosas,1,C15,3,I-1560.jpeg
-I-1559,EOAT,1,C15,3,I-1559.jpeg
+I-1559,"2 ventosas, 1 pinza",1,C15,3,I-1559.jpeg
 I-1558,1 pinza,1,C15,3,I-1558.jpeg
 I-1543,"4 ventosas, 1 pinza",1,C15,4,I-1543.jpeg
 I-1366,"2 ventosas, 1 pinza",1,C16,1,I-1366.jpeg
