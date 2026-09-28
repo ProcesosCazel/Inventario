@@ -12,7 +12,10 @@ Autor:
   <!-- Head -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
     <meta
       name="description"
       content="Sistema de búsqueda de herramental fin de brazo para los almacenes de EOAT de Industrias Cazel"
@@ -50,7 +53,13 @@ Autor:
       </h1>
     </header>
     <!-- Main -->
-    <main class="main-content">
+    <main id="app-content" class="main-content" tabindex="-1">
+      <noscript class="no-js-warning">
+        <div role="alert">
+          Esta aplicación requiere JavaScript para funcionar. Por favor,
+          habilítalo en tu navegador.
+        </div>
+      </noscript>
       <!-- Screen 1: Search Screen -->
       <section id="search-screen" class="screen">
         <h2>Buscador</h2>
@@ -61,16 +70,21 @@ Autor:
             id="eoat-search"
             placeholder="Ej. I-1850"
             autocomplete="off"
-            autofocus
+            enterkeyhint="search"
             spellcheck="false"
           />
-          <button id="print-btn" class="btn btn--secondary" disabled>
+          <button type="button" id="print-btn" class="btn btn--secondary" disabled>
             <span class="icon">🖨️</span>
             <span><strong>Imprimir</strong></span>
           </button>
         </div>
         <span id="results-counter" aria-live="polite"> </span>
-        <div id="results-table-container">
+        <div
+          id="results-table-container"
+          role="region"
+          aria-label="Resultados del buscador"
+          tabindex="0"
+        >
           <table id="results-table" class="hidden">
             <thead>
               <tr>
@@ -89,24 +103,28 @@ Autor:
       <section id="map-screen" class="screen hidden">
         <h2>Mapa</h2>
         <div id="map-container">
-          <img
-            id="map-image-N1"
-            src="./assets/MapaAlmacenN1.jpeg"
-            alt="Mapa del almacén de EOAT Nave 1 en Industrias Cazel"
-            loading="eager"
-          />
-          <figcaption>
-            🔴 Mapa del almacén de EOAT Nave 1 en Industrias Cazel
-          </figcaption>
-          <img
-            id="map-image-N23"
-            src="./assets/MapaAlmacenN23.jpeg"
-            alt="Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel"
-            loading="eager"
-          />
-          <figcaption>
-            🔵 🟢 Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel
-          </figcaption>
+          <figure class="map-figure">
+            <img
+              id="map-image-N1"
+              src="./assets/MapaAlmacenN1.jpeg"
+              alt="Mapa del almacén de EOAT Nave 1 en Industrias Cazel"
+              loading="eager"
+            />
+            <figcaption>
+              🔴 Mapa del almacén de EOAT Nave 1 en Industrias Cazel
+            </figcaption>
+          </figure>
+          <figure class="map-figure">
+            <img
+              id="map-image-N23"
+              src="./assets/MapaAlmacenN23.jpeg"
+              alt="Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel"
+              loading="eager"
+            />
+            <figcaption>
+              🔵 🟢 Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!-- Screen 3: Inbox screen -->
@@ -239,50 +257,50 @@ Autor:
             ></strong
           >
         </p>
+        <p class="admin-update-link">
+          <a href="./admin.html">⚙️ Actualizar la base de datos</a>
+        </p>
       </section>
-      <!-- Details Popup-->
-      <section
-        id="details-popup"
-        class="popup hidden"
-        role="dialog"
-        aria-modal="true"
-      >
+    </main>
+    <!-- Details Popup-->
+    <section
+      id="details-popup"
+      class="popup hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Detalles del fin de brazo"
+    >
+      <div class="popup-panel">
         <div id="popup-content"></div>
-        <button id="close-popup-btn" class="btn btn--secondary">
+        <button type="button" id="close-popup-btn" class="btn btn--secondary">
           <span class="icon">❌</span>
           <span><strong>Cerrar</strong></span>
         </button>
-      </section>
-    </main>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="site-footer">
       <!-- Main Navigation -->
-      <nav class="navbar">
-        <button id="search-screen-btn" class="btn btn--primary active">
+      <nav class="navbar" aria-label="Navegación principal">
+        <button type="button" id="search-screen-btn" class="btn btn--primary active">
           <span class="icon nav-icon">🔍</span>
           <span>Buscador</span>
         </button>
-        <button id="map-screen-btn" class="btn btn--primary">
+        <button type="button" id="map-screen-btn" class="btn btn--primary">
           <span class="icon nav-icon">🗺️</span>
           <span>Mapa</span>
         </button>
-        <button id="inbox-screen-btn" class="btn btn--primary">
+        <button type="button" id="inbox-screen-btn" class="btn btn--primary">
           <span class="icon nav-icon">💬</span>
           <span>Buzón</span>
         </button>
-        <button id="help-screen-btn" class="btn btn--primary">
+        <button type="button" id="help-screen-btn" class="btn btn--primary">
           <span class="icon nav-icon">❓</span>
           <span>Ayuda</span>
         </button>
       </nav>
     </footer>
     <!-- Scripts -->
-    <noscript class="no-js-warning">
-      <div role="alert">
-        Esta aplicación requiere JavaScript para funcionar. Por favor,
-        habilítalo en tu navegador.
-      </div>
-    </noscript>
     <script src="main.js" defer></script>
   </body>
 </html>

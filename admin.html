@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <meta
+      name="description"
+      content="Actualizador local de la base de datos del inventario EOAT de Industrias Cazel"
+    />
+    <title>Actualizar Base EOAT | Cazel</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./admin.css" />
+    <link rel="icon" href="./assets/MainIcon.ico" type="image/x-icon" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div id="cazel-logo-wrapper">
+        <img
+          id="cazel-logo"
+          class="logo"
+          src="./assets/LogoCazel.webp"
+          alt="Logo Industrias Cazel"
+          loading="eager"
+        />
+      </div>
+      <h1 class="site-title">Actualizador de Base de Datos EOAT</h1>
+    </header>
+
+    <main id="admin-content" class="main-content" tabindex="-1">
+      <noscript class="no-js-warning">
+        <div role="alert">
+          Esta herramienta requiere JavaScript para leer el Excel y generar el JSON.
+        </div>
+      </noscript>
+
+      <section class="screen admin-screen" aria-labelledby="admin-title">
+        <div class="admin-card admin-intro">
+          <h2 id="admin-title">Actualizar inventario</h2>
+          <p>
+            Selecciona el archivo maestro <strong>EOAT_data.xlsx</strong>. El archivo se procesa
+            localmente en este navegador; esta herramienta no publica cambios en GitHub.
+          </p>
+          <p class="admin-note">
+            La descarga solo se habilita cuando la conversión termina y la base cumple las
+            reglas del inventario EOAT.
+          </p>
+        </div>
+
+        <section class="admin-card" aria-labelledby="select-title">
+          <h3 id="select-title"><span class="admin-step-label">1</span>Seleccionar Excel</h3>
+          <div class="file-picker">
+            <label for="excel-file"><strong>Archivo de entrada:</strong> EOAT_data.xlsx</label>
+            <input
+              id="excel-file"
+              type="file"
+              accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            />
+            <span id="file-summary">Ningún archivo seleccionado.</span>
+          </div>
+          <div class="admin-actions">
+            <button id="convert-btn" type="button" class="btn btn--primary" disabled>
+              <span aria-hidden="true">⚙️</span>
+              <span><strong>Convertir y validar</strong></span>
+            </button>
+            <button id="reset-btn" type="button" class="btn btn--secondary">
+              <span aria-hidden="true">↺</span>
+              <span>Limpiar</span>
+            </button>
+          </div>
+          <div
+            id="admin-status"
+            class="admin-status"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            Selecciona EOAT_data.xlsx para comenzar.
+          </div>
+        </section>
+
+        <section id="validation-card" class="admin-card hidden" aria-labelledby="validation-title">
+          <h3 id="validation-title"><span class="admin-step-label">2</span>Validación</h3>
+          <div id="validation-summary"></div>
+          <details id="validation-details" class="admin-details hidden">
+            <summary>Ver incidencias</summary>
+            <ul id="validation-list" class="validation-list"></ul>
+          </details>
+        </section>
+
+        <section id="comparison-card" class="admin-card hidden" aria-labelledby="comparison-title">
+          <h3 id="comparison-title"><span class="admin-step-label">3</span>Comparación con la base actual</h3>
+          <p id="comparison-note"></p>
+          <div class="admin-grid" aria-label="Resumen de cambios">
+            <div class="admin-metric admin-metric--new">
+              <strong id="metric-new">0</strong>
+              <span>Nuevos</span>
+            </div>
+            <div class="admin-metric admin-metric--modified">
+              <strong id="metric-modified">0</strong>
+              <span>Modificados</span>
+            </div>
+            <div class="admin-metric admin-metric--removed">
+              <strong id="metric-removed">0</strong>
+              <span>Eliminados</span>
+            </div>
+            <div class="admin-metric admin-metric--same">
+              <strong id="metric-same">0</strong>
+              <span>Sin cambios</span>
+            </div>
+          </div>
+          <details id="changes-details" class="admin-details hidden">
+            <summary>Ver detalle de cambios</summary>
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">EOAT / espacio</th>
+                    <th scope="col">Detalle</th>
+                  </tr>
+                </thead>
+                <tbody id="changes-body"></tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+
+        <section id="download-card" class="admin-card" aria-labelledby="download-title">
+          <h3 id="download-title"><span class="admin-step-label">4</span>Descargar JSON</h3>
+          <p>
+            El archivo de salida conserva la estructura actual y se descarga con el nombre
+            <strong>eoat_data.json</strong>.
+          </p>
+          <div class="admin-actions">
+            <button id="download-btn" type="button" class="btn btn--primary" disabled>
+              <span aria-hidden="true">⬇️</span>
+              <span><strong>Descargar eoat_data.json</strong></span>
+            </button>
+          </div>
+          <p class="admin-download-note">
+            Después de descargarlo, reemplaza manualmente <strong>data/eoat_data.json</strong>
+            en tu copia local o en el repositorio de GitHub. Esta página no escribe en GitHub.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer admin-footer">
+      <nav class="navbar" aria-label="Navegación administrativa">
+        <a class="btn btn--primary" href="./index.html">
+          <span class="icon nav-icon" aria-hidden="true">←</span>
+          <span>Volver al inventario</span>
+        </a>
+      </nav>
+    </footer>
+
+    <script src="./assets/vendor/jszip.min.js"></script>
+    <script src="./eoat-xlsx-reader.js"></script>
+    <script src="./eoat-converter.js"></script>
+    <script src="./eoat-validator.js"></script>
+    <script src="./admin.js" defer></script>
+  </body>
+</html>

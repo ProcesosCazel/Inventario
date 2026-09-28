@@ -1,0 +1,22 @@
+# Operating system / editor artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Python artifacts (legacy tooling / local utilities)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local test outputs
+pruebas/
+coverage/
+
+# Legacy generated intermediate file
+eoat_data.csv

@@ -1,153 +1,130 @@
-# Proyecto: Sistema de Inventario Digital para Herramental de Fin de Brazo (EOAT)
+# Inventario Digital EOAT - Release 2.0
 
-## Estado del proyecto
+Sistema web estático para localizar Herramentales de Fin de Brazo (EOAT) dentro de los almacenes de Industrias Cazel.
 
-Proyecto piloto en fase de pruebas internas.
+**Versión:** Release 2.0  
+**Fecha:** 2026-09-28
 
-## Descripción
+## Funciones principales
 
-Sistema web estático diseñado para facilitar la localización de herramental de fin de brazo (EOAT) dentro de los almacenes de Industrias Cazel.
+- Buscar EOAT por número e identificar nave, columna y fila.
+- Mostrar estado y fotografía del herramental.
+- Consultar mapas de almacenes de Nave 1 y Nave 2/3.
+- Imprimir información del resultado.
+- Enviar reportes o sugerencias desde el Buzón.
+- Consultar la sección de Ayuda.
+- Actualizar la base desde `admin.html` usando el Excel maestro `EOAT_data.xlsx`.
 
-# Vista general
+![Vista del buscador](./assets/README/Screenshot1.png)
 
-![Imagen Buscador](./assets/README/Screenshot1.png)
+## Actualización de la base de datos
 
-## Objetivo:
-- Reducir el tiempo de búsqueda y acomodo de los fines de brazo en el almacén.
-- Reducir errores en la ubicación de los fines de brazo.
-- Mejorar la eficiencia en cambios de fin de brazo.
-- Fomentar iniciativas de lean manufacturing:
-    - SMED
-    - 5S
+La actualización ya no requiere CSV, Python ni PowerShell.
 
-## Funciones principales de la página web:
-- Buscar fin de brazo y mostrar
-    - Número de fin de brazo
-    - Nave
-    - Columna
-    - Fila
-    - Foto
-- Mostrar un mapa o diagrama del acomodo de los racks en el almacén
-    - Nave 1
-    - Nave 2 y 3
-- Imprimir o descargar como PDF información pertinente
-- Buzón digital
-    - Quejas
-    - Sugerencias
-    - EOAT no registrado
+Flujo actual:
 
-## La página funciona en:
+1. Editar el archivo maestro `EOAT_data.xlsx`.
+2. Abrir el Inventario EOAT.
+3. Entrar a **Ayuda**.
+4. Seleccionar **Actualizar la base de datos**.
+5. Cargar `EOAT_data.xlsx`.
+6. Presionar **Convertir y validar**.
+7. Revisar registros nuevos, modificados y eliminados.
+8. Descargar `eoat_data.json`.
+9. Sobrescribir manualmente `data/eoat_data.json` en la copia local o en GitHub.
 
-- Teléfonos móviles
-- Tablets
+### Reglas de conversión
+
+- `imagen` vacía -> `null`.
+- Cualquier otra celda vacía -> `""`.
+- `fila` siempre se genera como texto.
+- El JSON conserva exactamente los campos:
+
+```json
+{
+    "id": "I-1937",
+    "estado": "3 dedos, 2 pinzas",
+    "nave": 3,
+    "columna": "C01",
+    "fila": "1",
+    "imagen": "I-1937.jpeg"
+}
+```
+
+## Arquitectura principal
+
+```text
+Inventario_EOAT_Release_2.0/
+├── index.html
+├── main.js
+├── styles.css
+├── print.css
+├── manifest.webmanifest
+├── admin.html
+├── admin.css
+├── admin.js
+├── eoat-converter.js
+├── eoat-validator.js
+├── eoat-xlsx-reader.js
+├── VERSION
+├── RELEASE_NOTES.md
+├── assets/
+│   ├── EOAT/
+│   ├── SFX/
+│   ├── README/
+│   ├── vendor/
+│   ├── LogoCazel.webp
+│   ├── MainIcon.ico
+│   ├── MainIcon-192.png
+│   ├── MainIcon-512.png
+│   ├── MapaAlmacenN1.jpeg
+│   └── MapaAlmacenN23.jpeg
+├── data/
+│   ├── EOAT_data.xlsx
+│   └── eoat_data.json
+└── QR code/
+    ├── Codigo QR.docx
+    ├── qr-code.png
+    └── qr-code.svg
+```
+
+## Tecnologías
+
+- HTML
+- CSS
+- JavaScript
+- JSON
+- Microsoft Excel (`.xlsx`)
+- JSZip local para lectura del archivo XLSX
+- GitHub Pages para publicación
+
+No requiere backend, Python ni instalación de dependencias en la computadora del usuario.
+
+## Compatibilidad
+
+Compatible con navegadores modernos en:
+
 - Computadoras
-
-Solo requiere un navegador moderno y acceso a internet:
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
-- Safari
+- Tablets
+- Teléfonos móviles
 
 ## Código QR
 
 ![Código QR](./QR%20code/qr-code.svg)
 
-# Arquitectura del proyecto:
+## Publicación
 
-    EOAT Project
-    │
-    ├── index.html
-    ├── main.js
-    ├── styles.css
-    ├── print.css
-    │
-    ├── assets/
-    │   ├── EOAT/
-    │   │   ├── no-image.svg
-    │   │   └── *Imágenes de los EOAT*
-    │   ├── SFX/
-    │   │   ├── error.mp3
-    │   │   └── popup.mp3
-    │   ├── LogoCazel.webp
-    │   ├── MainIcon.svg
-    │   ├── MapaAlmacenN1.jpeg
-    │   └── MapaAlmacenN23.jpeg
-    │
-    └── data/
-        ├── EOAT_data.xlsx
-        ├── json_converter.py
-        ├── eoat_data.csv
-        └── eoat_data.json
+- Repositorio: https://github.com/ProcesosCazel/Inventario
+- GitHub Pages: https://procesoscazel.github.io/Inventario/
 
-## Tecnologías Utilizadas
+## Autores
 
-### Página Web
-- **HTML**
-- **CSS**
-- **JavaScript**
-### Base de datos
-- **MS Excel**
-- **JSON**
-- **Python**
-### Publicación
-- **Github Repo** (almacenamiento)
-- **GitHub Pages** (hosting)
-### Desarrollo y debugging
-- **VS Code**
-- **Herramientas de Inteligencia Artificial**
+**Ing. Hector Uriel Ramirez Sandoval**  
+Auxiliar de robot | Industrias Cazel
 
-No requiere frameworks ni backend.
+**Ing. José Antonio Guzmán Trujillo**  
+Becario de Procesos | Industrias Cazel
 
-![Lenguajes de programación](./assets/README/Languges.png)
+Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos.
 
-# Actualización de Base de Datos:
-## Usando el script de python
-- Simplemente se ejecuta el script "json_converter.py" dentro del folder "data", tomando como base el archivo de Excel "EOAT_data.xlsx". Automaticamente se crea la base de datos JSON con la siguiente estructura:
-### Estructura eoat_data.json
-    {
-        "id": "I-1937",
-        "estado": "EOAT",
-        "nave": 3,
-        "columna": "C01",
-        "fila": "1",
-        "imagen": "I-1937.jpeg"
-    },
-
-## Conversión alternativa utilizando IA
-- Subir el archivo .csv a Copilot o ChatGPT y escribir el siguiente prompt: **"Convierte la tabla csv a una base de datos json. Asegurate que los espacios vacios en la columna "Imagen" tenga valores de null, y los espacios vacíos en las demas columnas sean texto vacio (""). "**
-
-# Links y recursos:
-## AI Chatbots 
-- https://chatgpt.com/
-- https://copilot.microsoft.com/
-## Github Repo
-- https://github.com/ProcesosCazel/Inventario
-## Github Pages
-- https://procesoscazel.github.io/Inventario/
-## Descargar Python
-- https://www.python.org/downloads/
-### Dependencias necesarias:
-- pandas
-- openpyxl
-#### Para instalarlas copia y pega el codigo en la terminal de la computadora:
-    pip install pandas openpyxl
-
-# Propuestas de mejora futuras
-- Historial de movimientos (entradas y salidas de EOAT)
-- Registro de mantenimientos preventivos y correctivos
-- Estadísticas de uso y KPIs
-- Aplicación offline (PWA)
-
-# Autores:
-## 1. Ing. Hector Uriel Ramirez Sandoval
-### Auxiliar de robot | Industrias Cazel
-**uramirez@cazel.mx**
---
-## 2. Ing. José Antonio Guzmán Trujillo
-### Becario de Procesos | Industrias Cazel
-**tecnicosprocesos@cazel.mx**
---
-
-**Este proyecto fue desarrollado para uso interno de Industrias Cazel como herramienta de apoyo para ingenieros, técnicos y personal de procesos. Puede contener información confidencial.**
-
-**Copyright 2026 Industrias Cazel.**
+Copyright 2026 Industrias Cazel.
