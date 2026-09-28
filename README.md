@@ -100,6 +100,8 @@ Inventario_EOAT_Release_2.0/
 
 No requiere backend, Python ni instalación de dependencias en la computadora del usuario.
 
+![Lenguajes de programaciónr](./assets/README/Languages.png)
+
 ## Compatibilidad
 
 Compatible con navegadores modernos en:
