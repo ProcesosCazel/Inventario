@@ -81,7 +81,7 @@
       return forWarehouse.id === 'almacen-n1' ? 1.45 : 1.2;
     }
     function currentScale() {
-      if (!scales.has(warehouse.id)) scales.set(warehouse.id, baseScale());
+      if (!scales.has(warehouse.id)) scales.set(warehouse.id, baseScale()*0.5);
       return scales.get(warehouse.id);
     }
     function syncZoomSelect() {
