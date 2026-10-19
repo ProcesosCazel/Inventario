@@ -1,0 +1,163 @@
+/* Inventario EOAT v3.0 - Mobile-first map. Only warehouse tabs and SVG visible. */
+#map-screen.eoat-map {
+  width: 100%; max-width: none; height: 100%; min-height: 0;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.eoat-map .map-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center;
+  flex: 0 0 auto; gap: 8px; min-width: 0;
+}
+.eoat-map .map-tabs {
+  display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px;
+  flex: 1 1 320px; min-width: 0; margin: 0;
+}
+.eoat-map .map-zoom-row {
+  display: flex; align-items: center; justify-content: flex-end;
+  flex: 0 0 auto; gap: 8px; margin-left: auto;
+}
+.eoat-map .map-zoom-label {
+  font-size: .875rem; font-weight: 600; color: var(--color-text);
+}
+.eoat-map .map-zoom-select {
+  min-height: 44px; width: 102px; max-width: 100%;
+  padding: 7px 10px; border: var(--border-1);
+  border-radius: var(--radius); background: var(--color-surface);
+  color: var(--color-text); font: inherit; font-size: 1rem;
+}
+.eoat-map .map-tabs .btn {
+  min-width: 0; min-height: 44px; padding: 7px 10px;
+  font-size: clamp(.83rem,2.8vw,1rem); line-height: 1.2;
+  white-space: normal; border-radius: var(--radius);
+}
+.eoat-map .map-tabs [aria-pressed="true"] {
+  background: var(--color-primary); color: var(--color-text-inverse);
+  border-color: var(--color-primary); font-weight: 700;
+}
+.eoat-map .map-status, .eoat-map .map-error {
+  flex: 0 0 auto; margin: 0; padding: 8px 10px;
+  border: var(--border-1); border-radius: var(--radius-sm);
+  background: var(--color-surface); font-size: .82rem;
+  overflow-wrap: anywhere;
+}
+.eoat-map .map-error { border-color: var(--color-danger); }
+.eoat-map .map-canvas { flex: 1 1 auto; display: flex; min-width: 0; min-height: 0; }
+.eoat-map .map-viewport {
+  width: 100%; height: 100%; min-width: 0; min-height: 160px;
+  overflow-x: scroll; overflow-y: scroll; position: relative;
+  background: var(--color-surface); border: var(--border-1);
+  border-radius: var(--radius-lg);
+  touch-action: pan-x pan-y; overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-text-muted) var(--color-surface-muted);
+  -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Fixed SVG pixel size is assigned by mapa.js: both scroll axes can overflow. */
+.eoat-map #eoat-map-svg { display: block; max-width: none; min-width: 0; flex: none; }
+.eoat-map .map-viewport::-webkit-scrollbar { width: 12px; height: 12px; }
+.eoat-map .map-viewport::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted); border: 3px solid var(--color-surface-muted);
+  border-radius: 10px;
+}
+.eoat-map .map-viewport::-webkit-scrollbar-track { background: var(--color-surface-muted); }
+.eoat-map .map-viewport::-webkit-scrollbar-corner { background: var(--color-surface-muted); }
+.eoat-map .map-rack-n1 { --rack-tone: #b43126; --rack-fill: #f8dfdc; }
+.eoat-map .map-rack-n2 { --rack-tone: #216997; --rack-fill: #dcecf7; }
+.eoat-map .map-rack-n3 { --rack-tone: #18743f; --rack-fill: #def1e3; }
+.eoat-map .map-rack { cursor: pointer; outline: none; }
+.eoat-map .map-rack-outline { fill: var(--color-surface); stroke: var(--rack-tone); stroke-width: 1.5; }
+.eoat-map .map-cell-bg { fill: var(--rack-fill); stroke: var(--color-surface); stroke-width: 2; }
+.eoat-map .map-level-label { fill: var(--rack-tone); font: 600 16px system-ui,sans-serif; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+.eoat-map .map-level-value { fill: var(--color-text); font: 700 15px system-ui,sans-serif; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+.eoat-map .map-rack-label { fill: var(--rack-tone); font: 750 26px system-ui,sans-serif; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+.eoat-map .map-select-ring { fill: none; stroke: transparent; stroke-width: 4; vector-effect: non-scaling-stroke; pointer-events: none; }
+.eoat-map .map-rack-selected .map-select-ring { stroke: var(--color-accent); }
+.eoat-map .map-rack:focus-visible .map-select-ring { stroke: var(--color-text); stroke-dasharray: 5 3; }
+.eoat-map .map-cell[data-status="unknown"] .map-cell-bg { fill: var(--color-surface-muted); stroke: var(--color-text-muted); stroke-dasharray: 3 2; }
+.eoat-map .map-cell[data-status="waiting"] { opacity: .6; }
+.eoat-map .map-cell[data-status="blocked"] .map-cell-bg { stroke: var(--color-text); stroke-dasharray: 4 2; }
+.eoat-map .map-cell[data-status="review"] .map-cell-bg { stroke: var(--color-danger); stroke-width: 3; }
+.eoat-map .map-area-label { fill: var(--color-text-muted); font: 500 19px system-ui,sans-serif; pointer-events: none; }
+.eoat-map .map-landmark rect { fill: var(--color-surface); stroke: var(--color-text-muted); stroke-dasharray: 5 4; stroke-width: 1.5; }
+.eoat-map .map-landmark text { fill: var(--color-text-muted); font: 500 17px system-ui,sans-serif; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+
+/* Rack popup: separate from the existing EOAT photograph popup. */
+.map-popup {
+  position: fixed; inset: 0; z-index: 900;
+  display: flex; align-items: center; justify-content: center;
+  padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  background: rgba(0,0,0,.55); overscroll-behavior: contain;
+}
+.map-popup.hidden { display: none !important; }
+.map-popup-panel {
+  display: flex; flex-direction: column; width: min(100%,520px); max-height: 88dvh; min-height: 0;
+  background: var(--color-surface); color: var(--color-text);
+  border: var(--border-1); border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);
+  overflow: hidden;
+}
+.map-popup-header {
+  display: flex; align-items: center; justify-content: space-between;
+  flex: 0 0 auto; gap: 12px; padding: 12px 14px;
+  border-bottom: var(--border-1);
+}
+.map-popup-header h2 { min-width: 0; margin: 0; font-size: clamp(1.05rem,4.5vw,1.35rem); }
+.map-popup-close {
+  flex: 0 0 auto; display: grid; place-items: center;
+  width: 44px; height: 44px; border: var(--border-1);
+  border-radius: var(--radius-sm); background: var(--color-surface-muted);
+  color: var(--color-text); font-size: 1.7rem; line-height: 1;
+}
+.map-popup-content {
+  flex: 1 1 auto; min-height: 0; overflow: auto;
+  padding: 12px; padding-bottom: max(12px,env(safe-area-inset-bottom));
+  overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+}
+.map-popup-level {
+  border: var(--border-1); background: var(--color-surface-muted);
+  border-radius: var(--radius); padding: 12px; margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+.map-popup-level-selected { outline: 2px solid var(--color-accent); }
+.map-popup-level-title { margin: 0 0 8px; font-size: 1rem; }
+.map-popup-empty { margin: 0; font-size: .89rem; color: var(--color-text-muted); }
+.map-popup-record {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px;
+  padding: 9px 0; border-top: 1px solid var(--color-border-light);
+}
+.map-popup-record:first-of-type { border-top: none; }
+.map-eoat-button {
+  min-height: 44px; padding: 7px 12px; border: var(--border-1);
+  background: var(--color-surface); color: var(--color-accent-dark);
+  font-weight: 700; border-radius: var(--radius-sm); font-size: 1rem;
+}
+.map-popup-description { font-size: .9rem; flex: 1 1 10rem; }
+.map-popup-warning { color: var(--color-danger); font-size: .88rem; font-weight: 600; }
+
+@media (max-width: 600px) {
+  #map-screen.eoat-map { gap: 6px; }
+  .eoat-map .map-toolbar, .eoat-map .map-tabs { gap: 6px; }
+  .eoat-map .map-viewport { border-radius: 10px; }
+  .map-popup { align-items: flex-end; padding: 0; }
+  .map-popup-panel { width: 100%; max-height: min(85dvh,720px); border-radius: 18px 18px 0 0; }
+}
+@media (max-height: 400px) {
+  .eoat-map .map-tabs .btn { min-height: 40px; padding: 4px 6px; }
+  .eoat-map .map-zoom-select { min-height: 40px; padding: 4px 9px; }
+  .map-popup-panel { max-height: 96dvh; }
+}
+@media (prefers-color-scheme: dark) {
+  .eoat-map .map-rack-n1 { --rack-tone: #ff9e95; --rack-fill: #482d2a; }
+  .eoat-map .map-rack-n2 { --rack-tone: #88c8ff; --rack-fill: #253c50; }
+  .eoat-map .map-rack-n3 { --rack-tone: #79dda2; --rack-fill: #254333; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .eoat-map .map-rack:hover .map-select-ring { stroke: var(--color-accent); stroke-width: 2; }
+  .map-popup-close:hover, .map-eoat-button:hover { border-color: var(--color-accent); background: var(--color-surface-hover); }
+}
+@media print {
+  .map-popup, .eoat-map .map-tabs { display: none !important; }
+  #map-screen.eoat-map { display: block !important; height: auto !important; }
+  .eoat-map .map-viewport { height: 600px !important; }
+}

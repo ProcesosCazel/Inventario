@@ -414,6 +414,7 @@ function updateDatabaseUI() {
 
   if (restoreSearchFocus) searchInput.focus({ preventScroll: true });
   updateValidationUI();
+  syncEOATMap();
   if (canUseDatabase()) return;
 
   // No presentar datos anteriores ni permitir imprimir una carga incompleta.
@@ -518,6 +519,49 @@ async function requestDatabase() {
    NAVEGACIÓN ENTRE PANTALLAS
    ================================================= */
 
+/* =================================================
+   EOAT v3: adaptador de mapa (solo lectura).
+   No altera fetch, el validador ni la seleccion de datos de v2.0.
+   ================================================= */
+let eoatMapView = null;
+
+function syncEOATMap() {
+  if (!eoatMapView) return;
+  try {
+    eoatMapView.setSnapshot({
+      state: databaseState,
+      records: hasValidatedDatabase ? eoatDatabase : null,
+      error: databaseErrorMessage,
+      notice: "",
+    });
+  } catch (error) {
+    console.error("EOAT: el mapa no pudo recibir la base validada.", error);
+    const message = document.getElementById("eoat-map-error");
+    if (message) {
+      message.textContent = "No se pudo actualizar el mapa. El Buscador sigue disponible.";
+      message.classList.remove("hidden");
+    }
+  }
+}
+
+function initEOATMap() {
+  try {
+    if (!window.EOATMap) throw new Error("Falta mapa.js o no pudo cargarse.");
+    eoatMapView = window.EOATMap.mount(document.getElementById("map-screen"), {
+      config: window.EOAT_MAP_CONFIG,
+      onOpenRecord: (record) => openPopup(record),
+    });
+    syncEOATMap();
+  } catch (error) {
+    console.error("EOAT: error iniciando el mapa.", error);
+    const message = document.getElementById("eoat-map-error");
+    if (message) {
+      message.textContent = "No se pudo iniciar el mapa. Revisa mapa-config.js, mapa-model.js y mapa.js.";
+      message.classList.remove("hidden");
+    }
+  }
+}
+
 function setActiveButton(activeId) {
   navButtons.forEach((btn) => btn.classList.remove("active"));
   document.getElementById(activeId).classList.add("active");
@@ -542,6 +586,7 @@ function showScreen(screenId) {
       mainContent.scrollTop = 0;
       mainContent.scrollLeft = 0;
     }
+    if (screenId === "map-screen" && eoatMapView) eoatMapView.onVisible();
   });
 }
 
@@ -895,6 +940,7 @@ printBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   initResponsiveLayout();
+  initEOATMap();
   loadDatabase();
   errorSound.load();
   popupSound.load();

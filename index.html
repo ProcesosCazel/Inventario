@@ -24,6 +24,7 @@ Autor:
     <title>Inventario EOAT | Cazel</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mapa.css" />
     <!-- Print Sheet-->
     <link rel="stylesheet" href="./print.css" media="print" />
     <!-- Icon -->
@@ -99,32 +100,21 @@ Autor:
           </table>
         </div>
       </section>
-      <!-- Screen 2: Map screen -->
-      <section id="map-screen" class="screen hidden">
-        <h2>Mapa</h2>
-        <div id="map-container">
-          <figure class="map-figure">
-            <img
-              id="map-image-N1"
-              src="./assets/MapaAlmacenN1.jpeg"
-              alt="Mapa del almacén de EOAT Nave 1 en Industrias Cazel"
-              loading="eager"
-            />
-            <figcaption>
-              🔴 Mapa del almacén de EOAT Nave 1 en Industrias Cazel
-            </figcaption>
-          </figure>
-          <figure class="map-figure">
-            <img
-              id="map-image-N23"
-              src="./assets/MapaAlmacenN23.jpeg"
-              alt="Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel"
-              loading="eager"
-            />
-            <figcaption>
-              🔵 🟢 Mapa del almacén de EOAT Nave 2 y 3 en Industrias Cazel
-            </figcaption>
-          </figure>
+      <!-- Screen 2: Interactive EOAT map, mobile-first -->
+      <section id="map-screen" class="screen hidden eoat-map" aria-label="Mapa de almacenes">
+        <div class="map-tabs" role="group" aria-label="Almacenes">
+          <button type="button" class="btn btn--secondary" data-map-warehouse="almacen-n1" aria-pressed="true">Nave 1</button>
+          <button type="button" class="btn btn--secondary" data-map-warehouse="almacen-n23" aria-pressed="false">Naves 2 y 3</button>
+        </div>
+        <p id="eoat-map-status" class="map-status hidden" role="status" aria-live="polite"></p>
+        <p id="eoat-map-error" class="map-error hidden" role="alert"></p>
+        <div id="eoat-map-panel" class="map-canvas" aria-busy="true">
+          <div id="eoat-map-viewport" class="map-viewport" role="region" tabindex="0"
+               aria-label="Mapa interactivo: toca un rack, desliza para mover y pellizca para ampliar">
+            <svg id="eoat-map-svg" xmlns="http://www.w3.org/2000/svg"
+                 role="group" aria-labelledby="eoat-map-svg-title eoat-map-svg-desc"
+                 preserveAspectRatio="xMidYMid meet"></svg>
+          </div>
         </div>
       </section>
       <!-- Screen 3: Inbox screen -->
@@ -278,6 +268,17 @@ Autor:
         </button>
       </div>
     </section>
+    <!-- Rack detail popup. EOAT individual details still use #details-popup. -->
+    <section id="eoat-rack-popup" class="map-popup hidden" role="dialog" aria-modal="true"
+             aria-labelledby="eoat-rack-title" tabindex="-1">
+      <div class="map-popup-panel">
+        <header class="map-popup-header">
+          <h2 id="eoat-rack-title">Columna</h2>
+          <button type="button" id="eoat-rack-close" class="map-popup-close" aria-label="Cerrar detalle">&#215;</button>
+        </header>
+        <div id="eoat-rack-levels" class="map-popup-content"></div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="site-footer">
       <!-- Main Navigation -->
@@ -301,6 +302,9 @@ Autor:
       </nav>
     </footer>
     <!-- Scripts -->
+    <script src="./mapa-config.js" defer></script>
+    <script src="./mapa-model.js" defer></script>
+    <script src="./mapa.js" defer></script>
     <script src="main.js" defer></script>
   </body>
 </html>

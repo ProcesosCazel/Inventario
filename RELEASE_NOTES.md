@@ -1,57 +1,40 @@
-# Inventario EOAT - Release 2.0
+# Inventario EOAT — Release 3.0
 
-Fecha de liberación: 2026-09-28
+**Fecha de versión:** 19 de octubre de 2026
+**Base estable:** Release 2.0
 
-## Resumen
+## Novedad principal: mapas interactivos
 
-Release 2.0 consolida la versión estable del Inventario Digital EOAT e incorpora la actualización de la base de datos desde la propia página web mediante `admin.html`.
+- Sustituye los **mapas JPEG con contenido manual** por esquemas interactivos SVG generados a partir de `mapa-config.js` y `data/eoat_data.json`.
+- Solo **dos almacenes**: Nave 1 (única línea de 16 columnas) y un almacén compartido para las Naves 2 y 3 (28 columnas).
+- Interacción **Mapa → rack → popup con niveles → ficha de EOAT**. Sin botón de «Ver en mapa» desde el buscador, por decisión del proyecto.
+- Permite varios EOAT por nivel; niveles múltiples (`2 y 3`) sin duplicar el conteo de herramentales.
+- Diferencia `Libre`, `Obstruido`, `Sin información` y registros que requieren revisión.
+- **Desplazamiento horizontal y vertical** con scrollbars; interacción táctil y selección de zoom entre 50% y 250%. Se conserva zoom y desplazamiento por almacén durante la sesión.
+- Interfaz centrada en los dos mapas; sin panel permanente de detalle, controles de desplazamiento redundantes ni sección «Distribución y símbolos».
 
-## Funcionalidades principales
+## Compatibilidad conservada
 
-- Búsqueda de EOAT por identificador.
-- Visualización de nave, columna, fila, estado y fotografía.
-- Mapas de almacenes Nave 1 y Nave 2/3.
-- Impresión de resultados.
-- Buzón de reportes y sugerencias.
-- Pantalla de ayuda.
-- Enlace **Actualizar la base de datos** desde Ayuda.
-- Conversión local de `EOAT_data.xlsx` a `eoat_data.json`.
-- Validación del archivo antes de habilitar la descarga.
-- Comparación contra la base JSON actual.
-- Descarga manual de `eoat_data.json` para reemplazo local o publicación en GitHub.
+- `main.js` conserva **la lógica de descarga y validación del Release 2.0**: `fetch('./data/eoat_data.json')`, timeout, reintento, validación, y última base válida durante la sesión.
+- Buscador y mapa comparten **una sola carga validada**. El mapa no hace peticiones adicionales.
+- El Excel maestro `data/EOAT_data.xlsx` y la base `data/eoat_data.json` se conservaron **sin modificar**.
+- La conversión desde `admin.html` permanece igual (Excel → JSON → comparación → descarga); continúa siendo una página estática compatible con GitHub Pages.
+- Se mantienen Buzón, Ayuda, ficha de EOAT, fotografías, impresión y diseños responsivos.
+- Sin backend, CDN adicional, Service Worker ni implementación offline de toda la aplicación.
 
-## Reglas de conversión conservadas
+## Limpieza para la entrega
 
-- Columna `imagen` vacía -> `null`.
-- Demás columnas vacías -> `""`.
-- `fila` se conserva como texto.
-- Estructura JSON: `id`, `estado`, `nave`, `columna`, `fila`, `imagen`.
+- No se incluyen las pantallas auxiliares `mapa-layout.html` ni `mapa-datos.html`, ni pruebas, capturas, respaldos o clones Git.
+- Se retiran `assets/MapaAlmacenN1.jpeg` y `assets/MapaAlmacenN23.jpeg`, porque la pantalla ya dibuja ambos almacenes mediante SVG/JSON; se actualizan las referencias de origen en `mapa-config.js`.
+- Se retira `assets/README/Languges.png`, archivo sin referencias en la aplicación ni README.
+- Se conservan las fotografías operativas, el ícono de respaldo `no-image.svg`, QR, Excel maestro, licencias y recursos usados por el sitio.
+- Los EOAT que no tienen fotografía física permanecen en el inventario sin eliminar ni modificar sus referencias.
 
-## Limpieza realizada para Release 2.0
+## Antes de publicar
 
-Se retiraron del paquete de producción:
+1. Verificar en un navegador real (móvil y escritorio) ambos almacenes, scrollbars, zoom, racks, popups y fotografías.
+2. Comprobar que `index.html` carga los datos desde GitHub Pages por HTTPS; abrirlo mediante `file://` puede bloquear `fetch` incluso en v2.0.
+3. Confirmar que `admin.html` convierte el Excel y genera el mismo JSON para una base sin cambios.
+4. Commit/push de `main`, comprobar GitHub Pages y **crear tag `v3.0`**, conservando tag `v2.0`.
 
-- Carpeta de pruebas y capturas de validación.
-- `data/eoat_data.csv`.
-- `data/json_converter.py`.
-- Presentación de actualización basada en Python/CSV, ya obsoleta.
-- Copia PDF antigua del README.
-- Tres fotografías huérfanas no referenciadas por la base vigente: `I-1768.jpeg`, `I-1769.jpeg`, `I-1770.jpeg`.
-- `assets/MainIcon.svg`, no utilizado por la aplicación actual.
-
-## Archivos que permanecen como fuentes oficiales
-
-- `data/EOAT_data.xlsx`: Excel maestro.
-- `data/eoat_data.json`: base utilizada por la página.
-
-## Publicación
-
-La aplicación continúa siendo un sitio estático compatible con GitHub Pages. Para actualizar la base:
-
-1. Abrir la sección Ayuda.
-2. Seleccionar **Actualizar la base de datos**.
-3. Cargar `EOAT_data.xlsx`.
-4. Convertir y validar.
-5. Revisar el resumen de cambios.
-6. Descargar `eoat_data.json`.
-7. Reemplazar manualmente `data/eoat_data.json` localmente o en GitHub.
+**Nota:** incluir `VERSION = 3.0` y las notas en un ZIP no crea automáticamente un tag remoto de GitHub.

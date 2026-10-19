@@ -1,123 +1,87 @@
-# Inventario Digital EOAT - Release 2.0
+# Inventario Digital EOAT — Release 3.0
 
-Sistema web estático para localizar Herramentales de Fin de Brazo (EOAT) dentro de los almacenes de Industrias Cazel.
+**Industrias Cazel | Inventario de herramentales de fin de brazo (EOAT)**
+**Versión:** 3.0 | **Fecha:** 19 de octubre de 2026
 
-**Versión:** Release 2.0  
-**Fecha:** 2026-09-28
+Sistema web **estático** publicado en GitHub Pages. Permite buscar EOAT, consultar su ubicación registrada, revisar fotografías y explorar **dos mapas interactivos** construidos desde la misma base de datos JSON. No requiere backend ni servicios de mapas externos.
 
-## Funciones principales
+## Funciones
 
-- Buscar EOAT por número e identificar nave, columna y fila.
-- Mostrar estado y fotografía del herramental.
-- Consultar mapas de almacenes de Nave 1 y Nave 2/3.
-- Imprimir información del resultado.
-- Enviar reportes o sugerencias desde el Buzón.
-- Consultar la sección de Ayuda.
-- Actualizar la base desde `admin.html` usando el Excel maestro `EOAT_data.xlsx`.
+- **Buscador:** busca por ID de EOAT; consulta nave, columna, fila, descripción y fotografía. Incluye impresión de resultados.
+- **Mapa interactivo:** dos almacenes — Nave 1 y el almacén compartido de Naves 2/3 — con filas y EOAT generados desde `data/eoat_data.json`.
+- **Detalle mediante ventanas:** al tocar una columna se muestra el popup con los niveles y sus EOAT; al seleccionar un EOAT se abre la ficha con fotografía.
+- **Navegación del mapa:** scroll horizontal/vertical, arrastre táctil nativo y zoom por porcentaje (50–250%); pellizco con dos dedos en dispositivos compatibles. Se recuerda el nivel de zoom por almacén durante la sesión.
+- **Buzón:** reportar quejas, sugerencias y EOAT no registrados.
+- **Ayuda → Actualizar la base de datos:** permite convertir Excel a JSON desde `admin.html`, validar diferencias y descargar el resultado para publicarlo manualmente.
 
-![Vista del buscador](./assets/README/Screenshot1.png)
+**Los mapas representan ubicaciones registradas en el inventario, no presencia física en tiempo real.** Si un nivel no tiene registros, aparece **Sin información**, no necesariamente **Libre**.
 
-## Actualización de la base de datos
+## Dos almacenes
 
-La actualización ya no requiere CSV, Python ni PowerShell.
+**Nave 1:** única línea continua, en este orden:
 
-Flujo actual:
+`C12 → C11 → C10 → C09 → C08 → C07 → C06 → C05 → C04 → C03 → C02 → C01 → C16 → C15 → C14 → C13`.
 
-1. Editar el archivo maestro `EOAT_data.xlsx`.
-2. Abrir el Inventario EOAT.
-3. Entrar a **Ayuda**.
-4. Seleccionar **Actualizar la base de datos**.
-5. Cargar `EOAT_data.xlsx`.
-6. Presionar **Convertir y validar**.
-7. Revisar registros nuevos, modificados y eliminados.
-8. Descargar `eoat_data.json`.
-9. Sobrescribir manualmente `data/eoat_data.json` en la copia local o en GitHub.
+**Almacén compartido Naves 2/3:** conserva la disposición aprobada de los tramos superior, central superior e inferior y laterales. Los dibujos son **esquemáticos, no a escala**.
 
-### Reglas de conversión
+El archivo `mapa-config.js` contiene la **distribución física sin IDs de EOAT**. `mapa-model.js` asocia la base validada a cada columna y fila. `mapa.js` dibuja los racks y administra zoom, pestañas y ventanas. El mapa **no descarga ni edita el JSON**: recibe la misma copia validada por `main.js` que utiliza el buscador.
 
-- `imagen` vacía -> `null`.
-- Cualquier otra celda vacía -> `""`.
-- `fila` siempre se genera como texto.
-- El JSON conserva exactamente los campos:
-
-```json
-{
-    "id": "I-1937",
-    "estado": "3 dedos, 2 pinzas",
-    "nave": 3,
-    "columna": "C01",
-    "fila": "1",
-    "imagen": "I-1937.jpeg"
-}
-```
-
-## Arquitectura principal
+## Estructura principal
 
 ```text
-Inventario_EOAT_Release_2.0/
-├── index.html
-├── main.js
-├── styles.css
-├── print.css
-├── manifest.webmanifest
-├── admin.html
-├── admin.css
-├── admin.js
-├── eoat-converter.js
-├── eoat-validator.js
-├── eoat-xlsx-reader.js
-├── VERSION
-├── RELEASE_NOTES.md
-├── assets/
-│   ├── EOAT/
-│   ├── SFX/
-│   ├── README/
-│   ├── vendor/
-│   ├── LogoCazel.webp
-│   ├── MainIcon.ico
-│   ├── MainIcon-192.png
-│   ├── MainIcon-512.png
-│   ├── MapaAlmacenN1.jpeg
-│   └── MapaAlmacenN23.jpeg
-├── data/
-│   ├── EOAT_data.xlsx
-│   └── eoat_data.json
-└── QR code/
-    ├── Codigo QR.docx
-    ├── qr-code.png
-    └── qr-code.svg
+index.html                Pantallas Buscador / Mapa / Buzón / Ayuda
+styles.css                Estilos generales
+main.js                   Carga, validación, búsqueda y ficha de EOAT
+mapa-config.js            Distribución física aprobada de los 2 almacenes
+mapa-model.js             Agrupación de EOAT por rack y nivel
+mapa.js / mapa.css        Mapa interactivo, popups, zoom y desplazamiento
+admin.html / admin.css / admin.js
+                          Actualizador de base desde Excel
+eoat-converter.js         Conversión a JSON
+eoat-validator.js         Validación del JSON
+eoat-xlsx-reader.js       Lector Excel del navegador
+print.css                 Estilos de impresión
+manifest.webmanifest      Metadatos de la web
+VERSION / RELEASE_NOTES.md
+assets/                   Fotos EOAT, íconos, imágenes y sonidos operativos
+assets/vendor/            JSZip local y licencia
+data/EOAT_data.xlsx       Excel maestro
+data/eoat_data.json       Base vigente para Buscador y Mapa
+QR code/                  Material para difusión del enlace
 ```
 
-## Tecnologías
+## Actualizar el inventario (sin cambiar los mapas manualmente)
 
-- HTML
-- CSS
-- JavaScript
-- JSON
-- Microsoft Excel (`.xlsx`)
-- JSZip local para lectura del archivo XLSX
-- GitHub Pages para publicación
+1. Actualizar `data/EOAT_data.xlsx` conservando sus seis columnas.
+2. Entrar a **Ayuda → Actualizar la base de datos**.
+3. Seleccionar el Excel `EOAT_data.xlsx`.
+4. Presionar **Convertir y validar**; revisar el resumen de cambios.
+5. Descargar `eoat_data.json` y **reemplazar manualmente** `data/eoat_data.json` en el repositorio.
+6. Publicar los cambios; al recargar la página desde GitHub Pages, Buscador y Mapa usan el JSON actualizado.
 
-No requiere backend, Python ni instalación de dependencias en la computadora del usuario.
+**Reglas del convertidor:** `imagen` vacía → `null`; demás celdas vacías → `""`; `fila` siempre texto. Campos JSON (orden fijo): `id`, `estado`, `nave`, `columna`, `fila`, `imagen`. No se agregan coordenadas ni se cambia el esquema.
 
-![Lenguajes de programaciónr](./assets/README/Languages.png)
+### Importante sobre la prueba local
 
-## Compatibilidad
+GitHub Pages sirve los archivos mediante HTTPS. **Abrir `index.html` con doble clic (`file://`) puede impedir que `fetch()` cargue el JSON**, debido a la seguridad del navegador. El proyecto conserva el cargador estable de v2.0. Para probar la web localmente, ejecuta un servidor **estático** en la carpeta (solo para desarrollo):
 
-Compatible con navegadores modernos en:
+```powershell
+py -m http.server 8000
+```
 
-- Computadoras
-- Tablets
-- Teléfonos móviles
-
-## Código QR
-
-![Código QR](./QR%20code/qr-code.svg)
+Abre `http://localhost:8000/` y comprueba Buscador, Mapa y Administrador. Esto **no agrega backend ni modifica la arquitectura de GitHub Pages**.
 
 ## Publicación
 
-- Repositorio: https://github.com/ProcesosCazel/Inventario
-- GitHub Pages: https://procesoscazel.github.io/Inventario/
+- **Código:** https://github.com/ProcesosCazel/Inventario
+- **Página:** https://procesoscazel.github.io/Inventario/
+- **Release:** v3.0 (crear tag después del commit y push)
+
+No subir el ZIP dentro del repositorio: extrae su contenido y conserva el historial Git. Mantener `v2.0` como punto de retorno.
+
+## Código QR
+
+![Código QR del Inventario EOAT](./QR%20code/qr-code.svg)
 
 ## Autores
 

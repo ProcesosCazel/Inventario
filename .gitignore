@@ -20,3 +20,12 @@ coverage/
 
 # Legacy generated intermediate file
 eoat_data.csv
+
+# Local v3 map development artifacts
+mapa-layout.html
+mapa-layout.css
+mapa-layout.js
+mapa-datos.html
+*_test/
+*_backup/
+*.zip
