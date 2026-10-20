@@ -89,7 +89,7 @@
     },
     {
         "id": "I-1880",
-        "estado": "EOAT",
+        "estado": "Tarjetería electrónica, 2 dedos, 5 pinzas, 1 ventosa",
         "nave": 3,
         "columna": "C02",
         "fila": "3",
@@ -208,12 +208,28 @@
         "imagen": "I-1699.jpeg"
     },
     {
+        "id": "I-1864 (2)",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C05",
+        "fila": "2",
+        "imagen": "I-1864.jpeg"
+    },
+    {
         "id": "I-1789",
         "estado": "4 ventosas, 2 pinzas",
         "nave": 3,
         "columna": "C05",
         "fila": "2",
         "imagen": "I-1789.jpeg"
+    },
+    {
+        "id": "I-1972",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C05",
+        "fila": "3",
+        "imagen": "I-1972.jpeg"
     },
     {
         "id": "I-1720",
@@ -224,12 +240,20 @@
         "imagen": "I-1720.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1831",
+        "estado": "EOAT",
         "nave": 3,
         "columna": "C06",
         "fila": "1",
-        "imagen": null
+        "imagen": "I-1831.jpeg"
+    },
+    {
+        "id": "I-1971",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C06",
+        "fila": "1",
+        "imagen": "I-1971.jpeg"
     },
     {
         "id": "I-1788",
@@ -273,7 +297,7 @@
     },
     {
         "id": "I-1698",
-        "estado": "EOAT",
+        "estado": "6 pinzas, 2 dedos",
         "nave": 3,
         "columna": "C07",
         "fila": "1",
@@ -289,7 +313,7 @@
     },
     {
         "id": "I-1695",
-        "estado": "EOAT",
+        "estado": "Tarjetería electrónica, 10 pinzas, 1 ventosa",
         "nave": 3,
         "columna": "C07",
         "fila": "3",
@@ -432,12 +456,20 @@
         "imagen": null
     },
     {
-        "id": "Obstruido",
-        "estado": "Obstruido",
+        "id": "I-1770",
+        "estado": "EOAT",
         "nave": 3,
         "columna": "C12",
         "fila": "2",
-        "imagen": null
+        "imagen": "I-1770.jpeg"
+    },
+    {
+        "id": "I-1768",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C12",
+        "fila": "2",
+        "imagen": "I-1768.jpeg"
     },
     {
         "id": "Obstruido",
@@ -592,12 +624,20 @@
         "imagen": "I-1593.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1969",
+        "estado": "EOAT",
         "nave": 2,
         "columna": "C13",
         "fila": "2",
-        "imagen": null
+        "imagen": "I-1969.jpeg"
+    },
+    {
+        "id": "I-1973",
+        "estado": "EOAT",
+        "nave": 2,
+        "columna": "C13",
+        "fila": "2",
+        "imagen": "I-1973.jpeg"
     },
     {
         "id": "I-1598",
@@ -617,7 +657,7 @@
     },
     {
         "id": "I-1945",
-        "estado": "EOAT",
+        "estado": "3 ventosas",
         "nave": 2,
         "columna": "C14",
         "fila": "1",
@@ -630,6 +670,14 @@
         "columna": "C14",
         "fila": "1",
         "imagen": "I-1635.jpeg"
+    },
+    {
+        "id": "I-1976",
+        "estado": "EOAT",
+        "nave": 2,
+        "columna": "C14",
+        "fila": "2",
+        "imagen": "I-1976.jpeg"
     },
     {
         "id": "I-1630",
@@ -744,12 +792,12 @@
         "imagen": "I-1703.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1947",
+        "estado": "EOAT",
         "nave": 2,
         "columna": "C21",
         "fila": "1",
-        "imagen": null
+        "imagen": "I-1947.jpeg"
     },
     {
         "id": "I-1552",
