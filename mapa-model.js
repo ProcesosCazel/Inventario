@@ -80,7 +80,7 @@
     }
     records.forEach((record, index) => {
       if (!record || typeof record !== 'object' || typeof record.id !== 'string' || ![1,2,3].includes(record.nave) || typeof record.columna !== 'string') throw new TypeError(`Registro ${index + 1} sin validar.`);
-      const kind = /^I-[0-9]+$/.test(record.id) ? 'tool' : record.id === 'Libre' ? 'free' : record.id === 'Obstruido' ? 'blocked' : null;
+      const kind = /^I-[0-9]+(?: \([1-9][0-9]*\))?$/.test(record.id) ? 'tool' : record.id === 'Libre' ? 'free' : record.id === 'Obstruido' ? 'blocked' : null;
       if (!kind) throw new TypeError(`Registro ${index + 1}: ID sin validar.`);
       if (kind === 'tool') {
         if (toolIds.has(record.id)) throw new TypeError(`Registro ${index + 1}: ID duplicado sin validar.`);

@@ -11,7 +11,7 @@
 
   const EOAT_VALIDATION_RULES = Object.freeze({
     naves: Object.freeze([1, 2, 3]),
-    idPattern: /^I-[0-9]+$/,
+    idPattern: /^I-[0-9]+(?: \([1-9][0-9]*\))?$/,
     columnPattern: /^C(?:0[1-9]|[1-9][0-9])$/,
     rowPattern: /^[1-9][0-9]*(?: y [1-9][0-9]*)*$/,
     imagePattern: /^[A-Za-z0-9][A-Za-z0-9_-]*\.(?:jpe?g|png|webp|gif|avif|svg)$/i,
@@ -61,7 +61,7 @@
         id = lower === "libre" ? "Libre" : lower === "obstruido" ? "Obstruido" : value.toUpperCase();
         isTool = rules.idPattern.test(id);
         if (id.length > rules.maxIdLength || (!isTool && id !== "Libre" && id !== "Obstruido")) {
-          error("id", "ID_FORMAT", 'Debe usar I- seguido de dígitos, o ser "Libre" u "Obstruido" (máximo 64 caracteres).');
+          error("id", "ID_FORMAT", "Usa I- seguido de dígitos, con sufijo opcional para otro fin de brazo: I-1864 o I-1864 (2); también Libre u Obstruido (máximo 64 caracteres).");
         } else {
           if (id !== input.id) warning("id", "NORMALIZED", "Se normalizaron espacios externos o mayúsculas del identificador, solo en memoria.");
           if (isTool) {

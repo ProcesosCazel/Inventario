@@ -142,7 +142,7 @@ function recordsEqual(a, b) {
 
 function baseKeyForRecord(record) {
   const id = String(record.id ?? "");
-  if (/^I-[0-9]+$/.test(id)) return `tool:${id}`;
+  if (EOATValidator.EOAT_VALIDATION_RULES.idPattern.test(id)) return `tool:${id}`;
   return `slot:${String(record.nave)}|${String(record.columna)}|${String(record.fila)}`;
 }
 
