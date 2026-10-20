@@ -480,20 +480,28 @@
         "imagen": null
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1953",
+        "estado": "EOAT",
         "nave": 3,
         "columna": "C17",
         "fila": "1",
-        "imagen": null
+        "imagen": "I-1953.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1955",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C17",
+        "fila": "1",
+        "imagen": "I-1955.jpeg"
+    },
+    {
+        "id": "I-1964",
+        "estado": "EOAT",
         "nave": 3,
         "columna": "C17",
         "fila": "2",
-        "imagen": null
+        "imagen": "I-1964.jpeg"
     },
     {
         "id": "I-1697",
@@ -792,6 +800,14 @@
         "imagen": "I-1703.jpeg"
     },
     {
+        "id": "I-1959",
+        "estado": "EOAT",
+        "nave": 2,
+        "columna": "C21",
+        "fila": "1",
+        "imagen": "I-1959.jpeg"
+    },
+    {
         "id": "I-1947",
         "estado": "EOAT",
         "nave": 2,
@@ -960,12 +976,20 @@
         "imagen": "I-1362.jpeg"
     },
     {
-        "id": "Libre",
-        "estado": "Libre",
+        "id": "I-1962",
+        "estado": "EOAT",
         "nave": 2,
         "columna": "C26",
         "fila": "1",
-        "imagen": null
+        "imagen": "I-1962.jpeg"
+    },
+    {
+        "id": "I-1963",
+        "estado": "EOAT",
+        "nave": 2,
+        "columna": "C26",
+        "fila": "1",
+        "imagen": "I-1963.jpeg"
     },
     {
         "id": "Libre",
