@@ -496,6 +496,14 @@
         "imagen": "I-1955.jpeg"
     },
     {
+        "id": "I-1957",
+        "estado": "EOAT",
+        "nave": 3,
+        "columna": "C17",
+        "fila": "2",
+        "imagen": "I-1957.jpeg"
+    },
+    {
         "id": "I-1964",
         "estado": "EOAT",
         "nave": 3,
